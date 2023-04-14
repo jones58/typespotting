@@ -1,2 +1,5 @@
 # game
- 
+
+  ## Planning
+ ## Building
+ ## Debugging
