@@ -29,28 +29,19 @@
     - #51B333 and #FFFFFF
     - #844E20 and #D595B5
     - #75C16C and #D57CA8
-- 
-- I also found this [type specimen](https://commons.wikimedia.org/wiki/File:Cooper_Black_Type_Specimen_%2829488904886%29.jpg) and thought it could be a good background image possibly, so saved it. 
+  - I also realised using these backgrounds, on a rotating (and random basis), when images changed would help keep up the visual interest of my game with a selection of 20 images and 10 color schemes. 
+  - I sketched out a basic design for the site, including a very basic logo using tight custom kerning on "typespotting" and a magnifying glass made out of a "t" and "o" from Cooper Black. 
+    - I copied the SVG direct from Photoshop (click the layer/group and click "copy SVG"), saved it into a new SVG file and then edited it a little in Illustrator, using image tracing. 
+      - It was good to be able to make basic edits to the SVG in VSCodium and more complex ones in Illustrator and this is definitely something I want to look at more. 
+    - In sketching out the site, I made several choices: 
+        - Base the scoring system on 300 minus the time in seconds since the game begins.  This would keep the UI clean and give a simple scoring system - each photo out of the twenty would take 10 seconds or less for the user to guess, or they'd get a negative score.
+          - Extra minus points (5) for clicking the wrong place. 
+        - Make all the images square and design for mobile first. Hence the position of the design in the centre of the page. Desktop users could enjoy the negative space and bold colours of my ten colour schemes.
+    - 
+  
 
-
-
-
-
-
-
-
-
-- If I were to keep going and make this game more complicated, I would introduce other fonts and it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly when it comes to advertising and its power. (Everything is architecture, everyone an architect!)[https://twitter.com/archiworkers/status/1033716642990186498]
-
-
-
-
-
-
-
-
-
-
+- If I were to keep going and make this game more complicated, I would:
+  - introduce other fonts so it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly when it comes to advertising and its power. (Everything is architecture, everyone an architect!)[https://twitter.com/archiworkers/status/1033716642990186498]
 
 
 TODO : 
