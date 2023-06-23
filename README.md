@@ -39,7 +39,8 @@
 
 
 
-- If I were to keep going and make this game more complicated, I would introduce other fonts and it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly when it comes to advertising and its power. 
+
+- If I were to keep going and make this game more complicated, I would introduce other fonts and it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly when it comes to advertising and its power. (Everything is architecture, everyone an architect!)[https://twitter.com/archiworkers/status/1033716642990186498]
 
 
 
