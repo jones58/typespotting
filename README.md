@@ -39,27 +39,19 @@
           - Extra minus points (5) for clicking the wrong place. 
         - Make all the images square and design for mobile first. Hence the position of the design in the centre of the page. Desktop users could enjoy the negative space and bold colours of my ten colour schemes. 
         - Make text aligned to horizontal axis, for easy button placement. Then the buttons invisible (use border solid to help place them maybe)
-  
+        - Use touch/click as user input - since I want this to work on both mobile and desktop, i'll go for clicking over keyboard inputs. 
+        - [] Design intuitive user interface 
 
-
-
-TODO : 
-
-[ ] Break a feature into smaller parts
-[ ] Write pseudocode for each part of a feature
-[] Design intuitive user interface 
-[] Research Javascript features 
-[] Implement Javascript features 
-
-How will the user interact with your game? (for ex. mouse clicks, keyboard inputs, or a combination of both)
-
-Lastly, find joy in the process! One of the most important aspects of this task is that you enjoy building and playing your game. We're excited to see what you come up with!
 
 
 
  ## Building
 
 
+[ ] Break a feature into smaller parts
+[ ] Write pseudocode for each part of a feature
+[] Research Javascript features 
+[] Implement Javascript features 
 
 
 DOM 
