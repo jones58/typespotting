@@ -66,6 +66,8 @@ Javascript
 [] Know how to define arguments in a function and how to pass values in
 [] Write functions using traditional and arrow syntax
 
+use setinterval - <https://www.w3schools.com/jsref/met_win_setinterval.asp>
+
 ## Debugging
 
  []Identify issues and research solutions
