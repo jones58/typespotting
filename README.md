@@ -31,7 +31,7 @@
     - #51B333 and #FFFFFF
     - #844E20 and #D595B5
     - #75C16C and #D57CA8
-  - I also realised using these backgrounds, on a rotating (and random basis), when images changed would help keep up the visual interest of my game with a selection of 20 images and 10 color schemes.
+  - I also realised that using these colour pairs, on a rotating (and random basis), when images changed would help keep up the visual interest of my game with a selection of 20 images and 10 color schemes.
   - I sketched out a basic design for the site, including a very basic logo using tight custom kerning on "typespotting" and a magnifying glass made out of a "t" and "o" from Cooper Black.
     - I copied the SVG direct from Photoshop (click the layer/group and click "copy SVG"), saved it into a new SVG file and then edited it a little in Illustrator, using image tracing.
       - It was good to be able to make basic edits to the SVG in VSCodium and more complex ones in Illustrator and this is definitely something I want to look at more.
