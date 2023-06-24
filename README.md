@@ -42,6 +42,8 @@
       - Make text aligned to horizontal axis, for easy button placement. Then the buttons invisible (use border solid to help place them maybe)
       - Use touch/click as user input - since I want this to work on both mobile and desktop, i'll go for clicking over keyboard inputs.
 
+TODO :
+
 ## Building
 
 [ ] Break a feature into smaller parts
@@ -72,6 +74,8 @@ use setinterval - <https://www.w3schools.com/jsref/met_win_setinterval.asp>
 
  []Identify issues and research solutions
  [] Use Console.log() to debug code
+
+DONE BELOW HERE
 
 If I were to keep going and make this game more complicated, I would:
 
