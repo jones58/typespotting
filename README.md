@@ -14,9 +14,10 @@
 - I initially wanted to use Helvetica for this game, partly due to its ubiquity, but then I remembered [a video](https://www.youtube.com/watch?v=Zu91meda2I8) I watched a few years ago about Cooper Black and it seemed like a better choice because it's about forty years older than Helvetica and the video already includes a ton of examples of the font in street signs. This would save me time in searching for photos for the game, giving me more time to build and debug. 
 - I decided it would make sense if the game increased in difficulty, going from album covers/book covers with just cooper black to street scenes and more complicated graphics. 
 - I gathered a folder of images, categorising them loosely under three difficulties - level 1, 2 and 3. 
-- Whilst I initially wanted to get most of the images from the video linked above, I realised that one of my favourite sites, [Fonts In Use](https://fontsinuse.com/) would be a better and more eclectic source. 
-- Surfing Fonts in Use and the wider web,  I saved the links to where I found the images at the bottom of this doc under "sources". 
-- Side note: I really enjoyed looking for the Cooper Black album covers because albums are where my love of design originally came from.  
+  - Whilst I initially wanted to get most of the images from the video linked above, I realised that one of my favourite sites, [Fonts In Use](https://fontsinuse.com/) would be a better and more eclectic source. 
+  - Surfing Fonts in Use and the wider web,  I saved the links to where I found the images at the bottom of this doc under "sources". 
+  - Side note: I really enjoyed looking for the Cooper Black album covers because albums are where my love of design originally came from.  
+  - I crowd-sourced images from friends and family of Cooper Black in the streets and took some of my own too. I also went on Google Street View to find some images but everything was a bit too blurry, and I wanted to avoid my game looking like a Captcha. 
 - I came across [this video](https://www.youtube.com/watch?v=zf988tNfMx4) while looking for images and really liked the bold colours they use - I thought it would be cool to use them as the background and font colour on my site. 
   - I used an app called Sip to save the colour codes, ignoring color pairs that didn't contrast too much (because that would give unreadable type) and limiting myself to 10 combinations: 
     - #251B71 and #4296D2
@@ -36,12 +37,10 @@
     - In sketching out the site, I made several choices: 
         - Base the scoring system on 300 minus the time in seconds since the game begins.  This would keep the UI clean and give a simple scoring system - each photo out of the twenty would take 10 seconds or less for the user to guess, or they'd get a negative score.
           - Extra minus points (5) for clicking the wrong place. 
-        - Make all the images square and design for mobile first. Hence the position of the design in the centre of the page. Desktop users could enjoy the negative space and bold colours of my ten colour schemes.
-    - 
+        - Make all the images square and design for mobile first. Hence the position of the design in the centre of the page. Desktop users could enjoy the negative space and bold colours of my ten colour schemes. 
+        - Make text aligned to horizontal axis, for easy button placement. Then the buttons invisible (use border solid to help place them maybe)
   
 
-- If I were to keep going and make this game more complicated, I would:
-  - introduce other fonts so it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly when it comes to advertising and its power. (Everything is architecture, everyone an architect!)[https://twitter.com/archiworkers/status/1033716642990186498]
 
 
 TODO : 
@@ -52,26 +51,18 @@ TODO :
 [] Research Javascript features 
 [] Implement Javascript features 
 
-
-Think about the fundamental elements of a game: user interaction, rules, win/lose conditions, and perhaps a scoring system.
-
 How will the user interact with your game? (for ex. mouse clicks, keyboard inputs, or a combination of both)
-
-What are the rules? 
-
-What makes it challenging or engaging ? How does it get harder? 
-
-Win / lose conditions and scoring system. timer maybe 
-
-How does it remain fresh and engaging? Increasing complexity ...
 
 Lastly, find joy in the process! One of the most important aspects of this task is that you enjoy building and playing your game. We're excited to see what you come up with!
 
 
 
  ## Building
+
+
+
+
 DOM 
-[] Use JavaScript to respond to user input
 [] use Javascript to update user interface 
 [] be able to use time intervals in Javascript 
 [] Use event listeners to respond to user input 
@@ -88,25 +79,19 @@ Javascript
 [] Know how to define arguments in a function and how to pass values in
 [] Write functions using traditional and arrow syntax 
 
-[] scoring system 
-
-
-
-Helpful links to run through: 
-
 
 
 
  ## Debugging
  []Identify issues and research solutions 
- [] Ask questions on discord, giving context to others who might like to help 
  [] Use Console.log() to debug code 
 
 
 
 
 
-
+If I were to keep going and make this game more complicated, I would:
+  - Introduce other fonts so it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly advertising and its power over our lives. [Everything is architecture, everyone an architect!](https://twitter.com/archiworkers/status/1033716642990186498)
 
 
 
@@ -157,6 +142,5 @@ https://www.youtube.com/watch?v=Zu91meda2I8
 https://twitter.com/NickSherman/status/905821528566239232 
 
 https://fontreviewjournal.com/cooper/
-
 
 https://upload.wikimedia.org/wikipedia/commons/8/87/Cooper_Black_Type_Specimen_%2829488904886%29.jpg   
