@@ -47,15 +47,15 @@ TODO :
 ## Building
 
 - I decided i wanted the color scheme to randomise on launch between ten options, so i set about building it. I broke this down, starting with the css then thinking about the js with pseudocode.  
-    - It took me about forty minutes to get this all working, I had to debug as I went along, writing what I thought was the right JS then debugging by wrapping it in a comment and changing the CSS until that worked with the standard "colorScheme1" as the class for html, then going back and fixing the JS, using Console.log(), the RunJS app and ChatGPT as I went along. 
-  - I named and separated this code into it's function named randomColorScheme() so that I could reuse it when I wanted to, like for the images changing. 
-  - I got pretty excited when I got this working, so much that I kept reloading the page. 
-  - In my testing, I decided to take it down to 9 color schemes because one of the combinations (number 10) wasn't quite readable enough. 
-- Next up I set up building my html and CSS, using my planning wireframe as a guide. 
-  - It was good to realise that I could close the minimise the svg code in vscodium. 
+  - It took me about forty minutes to get this all working, I had to debug as I went along, writing what I thought was the right JS then debugging by wrapping it in a comment and changing the CSS until that worked with the standard "colorScheme1" as the class for html, then going back and fixing the JS, using Console.log(), the RunJS app and ChatGPT as I went along.
+  - I named and separated this code into it's function named randomColorScheme() so that I could reuse it when I wanted to, like for the images changing.
+  - I got pretty excited when I got this working, so much that I kept reloading the page.
+  - In my testing, I decided to take it down to 9 color schemes because one of the combinations (number 10) wasn't quite readable enough.
+- Next up I set up building my html and CSS, using my planning wireframe as a guide.
+  - It was good to realise that I could minimise the svg code in vscodium.
 
-
-
+TODO:
+rename and resize the images in levels, cut down to 20.
 
 DOM
 [] be able to use time intervals in Javascript
@@ -75,11 +75,7 @@ use setinterval - <https://www.w3schools.com/jsref/met_win_setinterval.asp>
 
  []Identify issues and research solutions
 
-
 DONE BELOW HERE
-
-
-
 
 If I were to keep going and make this game more complicated, I would:
 
