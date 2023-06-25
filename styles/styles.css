@@ -3,3 +3,56 @@ html {
   font-family: x;
   margin: 0, auto;
 }
+
+/* ten color schemes */
+
+.colorscheme1 {
+  --background-color: #251b71;
+  --foreground-color: #4296d2;
+}
+
+.colorscheme2 {
+  --background-color: #8dc788;
+  --foreground-color: #2d6320;
+}
+
+.colorscheme3 {
+  --background-color: #ea3b24;
+  --foreground-color: #f8d5d0;
+}
+
+.colorscheme4 {
+  --background-color: #9329d1;
+  --foreground-color: #c9e6f5;
+}
+
+.colorscheme5 {
+  --background-color: #251b71;
+
+  --foreground-color: #e6e195;
+}
+
+.colorscheme6 {
+  --background-color: #e4c693;
+  --foreground-color: #000000;
+}
+
+.colorscheme7 {
+  --background-color: #4296d2;
+  --foreground-color: #fdf250;
+}
+.colorscheme8 {
+  --background-color: #51b333;
+  --foreground-color: #ffffff;
+}
+
+.colorscheme9 {
+  --background-color: #844e20;
+  --foreground-color: #d595b5;
+}
+
+h1,
+svg {
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+}

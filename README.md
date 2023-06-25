@@ -31,7 +31,7 @@
     - #51B333 and #FFFFFF
     - #844E20 and #D595B5
     - #75C16C and #D57CA8
-  - I also realised that using these colour pairs, on a rotating (and random basis), when images changed would help keep up the visual interest of my game with a selection of 20 images and 10 color schemes.
+  - I also realised that using these colour pairs, on a rotating and random basis, when the page loaded and when images changed would help keep up the visual interest of my game with a selection of 20 images and 10 color schemes.
   - I sketched out a basic design for the site, including a very basic logo using tight custom kerning on "typespotting" and a magnifying glass made out of a "t" and "o" from Cooper Black.
     - I copied the SVG direct from Photoshop (click the layer/group and click "copy SVG"), saved it into a new SVG file and then edited it a little in Illustrator, using image tracing.
       - It was good to be able to make basic edits to the SVG in VSCodium and more complex ones in Illustrator and this is definitely something I want to look at more.
@@ -46,18 +46,18 @@ TODO :
 
 ## Building
 
-[ ] Break a feature into smaller parts
-[ ] Write pseudocode for each part of a feature
-[] Research Javascript features
-[] Implement Javascript features
+- I decided i wanted the color scheme to randomise on launch between ten options, so i set about building it. I broke this down, starting with the css then thinking about the js with pseudocode.  
+    - It took me about forty minutes to get this all working, I had to debug as I went along, writing what I thought was the right JS then debugging by wrapping it in a comment and changing the CSS until that worked with the standard "colorScheme1" as the class for html, then going back and fixing the JS, using Console.log(), the RunJS app and ChatGPT as I went along. 
+  - I named and separated this code into it's function named randomColorScheme() so that I could reuse it when I wanted to, like for the images changing. 
+  - I got pretty excited when I got this working, so much that I kept reloading the page. 
+  - In my testing, I decided to take it down to 9 color schemes because one of the combinations (number 10) wasn't quite readable enough. 
+- Next up I set up building my html and CSS, using my planning wireframe as a guide
+
+
+
 
 DOM
-[] use Javascript to update user interface
 [] be able to use time intervals in Javascript
-[] Use event listeners to respond to user input
-[] Respond to click events
-[] Respond to key presses
-[] Reference a function within an event listener
 [] [ ] Use querySelector() and querySelectorAll() to gather HTML elements
 
 Javascript
@@ -73,9 +73,12 @@ use setinterval - <https://www.w3schools.com/jsref/met_win_setinterval.asp>
 ## Debugging
 
  []Identify issues and research solutions
- [] Use Console.log() to debug code
+
 
 DONE BELOW HERE
+
+
+
 
 If I were to keep going and make this game more complicated, I would:
 
