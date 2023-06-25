@@ -51,7 +51,8 @@ TODO :
   - I named and separated this code into it's function named randomColorScheme() so that I could reuse it when I wanted to, like for the images changing. 
   - I got pretty excited when I got this working, so much that I kept reloading the page. 
   - In my testing, I decided to take it down to 9 color schemes because one of the combinations (number 10) wasn't quite readable enough. 
-- Next up I set up building my html and CSS, using my planning wireframe as a guide
+- Next up I set up building my html and CSS, using my planning wireframe as a guide. 
+  - It was good to realise that I could close the minimise the svg code in vscodium. 
 
 
 
