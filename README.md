@@ -42,8 +42,6 @@
       - Make text aligned to horizontal axis, for easy button placement. Then the buttons invisible (use border solid to help place them maybe)
       - Use touch/click as user input - since I want this to work on both mobile and desktop, i'll go for clicking over keyboard inputs.
 
-TODO :
-
 ## Building
 
 - I decided i wanted the color scheme to randomise on launch between ten options, so i set about building it. I broke this down, starting with the css then thinking about the js with pseudocode.  
@@ -55,7 +53,9 @@ TODO :
   - It was good to realise that I could minimise the svg code in vscodium.
 
 TODO:
-rename and resize the images in levels, cut down to 20.
+- rename and resize the images in levels, cut down to 20.
+- font 
+- see above planning steps
 
 DOM
 [] be able to use time intervals in Javascript

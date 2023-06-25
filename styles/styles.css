@@ -53,13 +53,15 @@ html {
 
 img {
   object-fit: cover;
-  width: 80vw;
-  height: 80vw;
-  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  margin-right: calc((100vw - 300px) / 2);
+  margin-left: calc((100vw - 300px) / 2);
 }
 
 h1,
-svg {
+svg,
+body {
   color: var(--foreground-color);
   background-color: var(--background-color);
 }
