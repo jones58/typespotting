@@ -52,7 +52,8 @@
 - Next up I set up building my html and CSS, using my planning wireframe as a guide.
   - It was good to realise that I could minimise the svg code in VSCodium
   - Adding the image, I wondered what size would make sense as a base px width, so i loooked up the smallest mobile width in common active use and it looks like 320px (iPhone 5), so I set the image width to 300px and set left and right margin with calc() to centre the image. 
-  - 
+- Decided i wanted 6 easy images (level 1), 6 more medium (level 2) and 8 hard (level 3) to keep it interesting. 
+  
 
 
 TODO:
