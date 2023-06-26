@@ -1,7 +1,11 @@
 html {
   box-sizing: border-box;
-  font-family: x;
+  font-family: "Cooper Std";
+  font-size: 18px;
+  padding: 0;
+  width: 100vw;
   margin: 0, auto;
+  line-height: 1.6rem;
 }
 
 /* ten color schemes */
