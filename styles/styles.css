@@ -1,14 +1,14 @@
 html {
   box-sizing: border-box;
   font-family: "Cooper Std";
-  font-size: 18px;
+  font-size: 16px;
   padding: 0;
   width: 100vw;
   margin: 0, auto;
   line-height: 1.6rem;
 }
 
-/* ten color schemes */
+/* nine color schemes */
 
 .colorscheme1 {
   --background-color: #251b71;
@@ -64,9 +64,34 @@ img {
 }
 
 svg {
-  width: 400px;
-  margin-right: calc((100vw - 400px) / 2);
-  margin-left: calc((100vw - 400px) / 2);
+  width: 80vw;
+  max-height: 5rem;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+h1 {
+  font-size: 2.441rem;
+}
+
+h2 {
+  font-size: 1.953rem;
+}
+
+h3 {
+  font-size: 1.563rem;
+}
+
+p1 {
+  font-size: 1.25rem;
+}
+
+p2 {
+  font-size: 1rem;
+}
+
+p3 {
+  font-size: 0.8rem;
 }
 
 #how-to {
@@ -81,8 +106,6 @@ svg {
   margin-left: calc((100vw - 300px) / 2);
 }
 
-h1,
-svg,
 body {
   color: var(--foreground-color);
   background-color: var(--background-color);
