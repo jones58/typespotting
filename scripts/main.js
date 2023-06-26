@@ -3,7 +3,7 @@ let htmlElement = document.getElementById("html");
 
 /* random color scheme */
 function randomColorScheme() {
-  let randomColorScheme = Math.floor(Math.random() * 11);
+  let randomColorScheme = Math.floor(Math.random() * 10);
   htmlElement.classList.add("colorscheme" + randomColorScheme);
   console.log("hello");
 }
