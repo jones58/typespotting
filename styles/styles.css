@@ -94,13 +94,10 @@ p3 {
   font-size: 0.8rem;
 }
 
-#how-to {
-  width: 300px;
-  margin-right: calc((100vw - 300px) / 2);
-  margin-left: calc((100vw - 300px) / 2);
-}
-
-#score {
+#how-to,
+#score,
+#right-answer,
+#wrong-answer {
   width: 300px;
   margin-right: calc((100vw - 300px) / 2);
   margin-left: calc((100vw - 300px) / 2);

@@ -38,7 +38,7 @@
     - In sketching out the site, I made several choices:
       - Base the scoring system on 300 minus the time in seconds since the game begins.  This would keep the UI clean and give a simple scoring system - each photo out of the twenty would take 10 seconds or less for the user to guess, or they'd get a negative score.
         - Extra minus points (5) for clicking the wrong place.
-      - Make all the images square and design for mobile first. Hence the position of the design in the centre of the page. Desktop users could enjoy the negative space and bold colours of my ten colour schemes.
+      - Make all the images square and design for mobile first. Hence the position of the design in the centre of the page. Desktop users could enjoy the negative space and bold colours of my nine colour schemes.
       - Make text aligned to horizontal axis, for easy button placement. Then the buttons invisible (use border solid to help place them maybe)
       - Use touch/click as user input - since I want this to work on both mobile and desktop, i'll go for clicking over keyboard inputs.
 
@@ -47,7 +47,7 @@
 - I decided i wanted the color scheme to randomise on launch between ten options, so i set about building it. I broke this down, starting with the css then thinking about the js with pseudocode.  
   - It took me about forty minutes to get this all working, I had to debug as I went along, writing what I thought was the right JS then debugging by wrapping it in a comment and changing the CSS until that worked with the standard "colorScheme1" as the class for html, then going back and fixing the JS, using Console.log(), the RunJS app and ChatGPT as I went along.
   - I named and separated this code into it's function named randomColorScheme() so that I could reuse it when I wanted to, like for the images changing.
-  - I got pretty excited when I got this working, so much that I kept reloading the page.
+  - I got pretty excited when I got this working, so much so that I kept reloading the page.
   - In my testing, I decided to take it down to 9 color schemes because one of the combinations (number 10) wasn't quite readable enough.
 - Next up I set up building my html and CSS, using my planning wireframe as a guide.
   - It was good to realise that I could minimise the svg code in VSCodium
@@ -56,7 +56,6 @@
 
 
 TODO:
-
 - rename and resize the images in levels, cut down to 20.
 - see above planning steps
 
