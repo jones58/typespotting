@@ -60,6 +60,7 @@
 TODO:
 
 -- look through other where's wally games
+- see resources
 -- see pseudocode in js file, work out how to build it
 
 
