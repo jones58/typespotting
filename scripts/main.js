@@ -13,15 +13,35 @@ window.addEventListener("load", () => {
   randomStartingImage();
 });
 
-/* random number within level 1 */
 let imageElement = document.querySelector("img");
+
+/* random image within level 1 */
+
 function randomStartingImage() {
-  let randomNumber = Math.floor(Math.random() * 7);
+  let randomNumber1 = Math.floor(Math.random() * 7);
   imageElement.setAttribute(
     "src",
-    "images/level1/" + randomNumber + ".jpeg"
+    "images/level1/" + randomNumber1 + ".jpeg"
   );
   console.log(hello);
+}
+
+/* random image within level 2 */
+function randomLevelTwoImage() {
+  let randomNumber2 = Math.floor(Math.random() * 7);
+  imageElement.setAttribute(
+    "src",
+    "images/level2/" + randomNumber2 + ".jpeg"
+  );
+}
+
+/* random image within level 3 */
+function randomLevelThreeImage() {
+  let randomNumber3 = Math.floor(Math.random() * 9);
+  imageElement.setAttribute(
+    "src",
+    "images/level3/" + randomNumber3 + ".jpeg"
+  );
 }
 
 /* x y points in image - if click within set x y for particular image (1 of 20) then win. 
@@ -36,8 +56,6 @@ function randomStartingImage() {
 - take 5 off score */
 
 /* display:none rules after first photo */
-
-/* change photo by changing src attribute, change buttons when this changes too. */
 
 /* start score at 300 and take 1 point off score per second using time intervals */
 
