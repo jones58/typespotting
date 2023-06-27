@@ -42,7 +42,7 @@
       - Make text aligned to horizontal axis, for easy button placement. Then the buttons invisible (use border solid to help place them maybe)
       - Use touch/click as user input - since I want this to work on both mobile and desktop, i'll go for clicking over keyboard inputs.
 
-## Building
+## Building and Debugging 
 
 - I decided i wanted the color scheme to randomise on launch between ten options, so i set about building it. I broke this down, starting with the css then thinking about the js with pseudocode.  
   - It took me about forty minutes to get this all working, I had to debug as I went along, writing what I thought was the right JS then debugging by wrapping it in a comment and changing the CSS until that worked with the standard "colorScheme1" as the class for html, then going back and fixing the JS, using Console.log(), the RunJS app and ChatGPT as I went along.
@@ -53,34 +53,29 @@
   - It was good to realise that I could minimise the svg code in VSCodium
   - Adding the image, I wondered what size would make sense as a base px width, so i loooked up the smallest mobile width in common active use and it looks like 320px (iPhone 5), so I set the image width to 300px and set left and right margin with calc() to centre the image. 
 - Decided i wanted 6 easy images (level 1), 6 more medium (level 2) and 8 hard (level 3) to keep it interesting. 
-  
+    - I cropped and made them square in Photoshop and named them 1-6, 1-6, 1-8 in each of the folders. Gave them same extension too for each manipulation with Javascript. 
+- 
 
 
 TODO:
-- rename and resize the images in levels, cut down to 20.
-- see above planning steps
+
+-- look through other where's wally games
+-- see pseudocode in js file, work out how to build it
+
 
 DOM
-[] be able to use time intervals in Javascript
-[] [ ] Use querySelector() and querySelectorAll() to gather HTML elements
-
 Javascript
 [ ] Understand the syntax of JavaScript functions
 [ ] Understand the required and optional parts of a JavaScript function
-[] Define a function
-[] Call a function
 [] Know how to define arguments in a function and how to pass values in
 [] Write functions using traditional and arrow syntax
 
-use setinterval - <https://www.w3schools.com/jsref/met_win_setinterval.asp>
-
-## Debugging
-
- []Identify issues and research solutions
 
 DONE BELOW HERE
 
 If I were to keep going and make this game more complicated, I would:
+
+- Make a new level (4) where trick fonts are introduced - visually similar fonts to Cooper Black as tricks to test players. 
 
 - Introduce other fonts so it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly advertising and its power over our lives. [Everything is architecture, everyone an architect!](https://twitter.com/archiworkers/status/1033716642990186498)
 
