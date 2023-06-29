@@ -54,12 +54,11 @@
   - Adding the image, I wondered what size would make sense as a base px width, so i loooked up the smallest mobile width in common active use and it looks like 320px (iPhone 5), so I set the image width to 300px and set left and right margin with calc() to centre the image. 
 - Decided i wanted 6 easy images (level 1), 6 more medium (level 2) and 8 hard (level 3) to keep it interesting. 
     - I cropped and made them square in Photoshop and named them 1-6, 1-6, 1-8 in each of the folders. Gave them same extension too for each manipulation with Javascript. 
+- At this point I showed my game (and some of the functionality like the random colour scheme) to people at Founders and Coders Meetup. It was great to get some early user feedback on my game - both a confidence boost and a chance to refine my idea and really focus on what it is I want the purpose of the game to be and how to express this.
 - 
 
 
 TODO:
--- look through other where's wally games
-- see resources
 -- see pseudocode in js file, work out how to build it
 Write rules of game more clearly
 
