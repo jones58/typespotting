@@ -44,7 +44,17 @@ function randomLevelThreeImage() {
   );
 }
 
-/* x y points in image - if click within set x y for particular image (1 of 20) then win. 
+/* select score and set starting score */
+let scoreHTML = document.getElementById("score");
+let scoreNumber = 300;
+/* start score at 300 and take 1 point off score per second using time intervals */
+function timeScoreDown() {
+  scoreNumber -= 1;
+  scoreHTML.textContent = "Score: " + scoreNumber.toString();
+}
+setInterval(timeScoreDown, 1000);
+
+/* x y points in image - if click within set x y for particular image (1 of 6) then win. 
 /* when click Cooper Black (within set x y): 
 - highlight where Cooper Black is / the set x y coordinates. 
 - display : inline the right answer text (#right-answer)
@@ -56,7 +66,5 @@ function randomLevelThreeImage() {
 - take 5 off score */
 
 /* display:none rules after first photo */
-
-/* start score at 300 and take 1 point off score per second using time intervals */
 
 /*[] [ ] Use querySelector() and querySelectorAll() to gather HTML elements */
