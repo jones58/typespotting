@@ -55,18 +55,12 @@
 - Decided i wanted 6 easy images (level 1), 6 more medium (level 2) and 8 hard (level 3) to keep it interesting.
   - I cropped and made them square in Photoshop and named them 1-6, 1-6, 1-8 in each of the folders. Gave them same extension too for each manipulation with Javascript.
 - At this point I showed my game (and some of the functionality like the random colour scheme) to people at Founders and Coders Meetup. It was great to get some early user feedback on my game - both a confidence boost and a chance to refine my idea and really focus on what it is I want the purpose of the game to be and how to express this. I decided I wanted to write out the rules of the game more clearly.
-- I continued writing pseudocode to work out what the javascript needed to look like. At this point I realised my random image generator (for level 1, level 2, level 3) was lacking because it would just generate random images, not removing the options that have been generated already. I decided I needed an array, following on from reading a fellow FAC applicant's code the day before (Sam). This took a lot of time to get right, after a lot of debugging with console.log() in RunJS I had a usable function. When i got this code right, i made sure i could easily change it for level 2 and 3, by swapping the "One" in variable names for "two", "three". 
-- 
+- I continued writing pseudocode to work out what the javascript needed to look like. At this point I realised my random image generator (for level 1, level 2, level 3) was lacking because it would just generate random images, not removing the options that have been generated already. I decided I needed an array, following on from reading a fellow FAC applicant's code the day before (Sam). This took a lot of time to get right, after a lot of debugging with console.log() in RunJS I had a usable function. When i got this code right, i made sure i could easily change it for level 2 and 3, by swapping the "One" in variable names for "two", "three".
+-
 
 TODO:
-Write rules of game more clearly
-
-DOM
-Javascript
-[ ] Understand the syntax of JavaScript functions
-[ ] Understand the required and optional parts of a JavaScript function
-[] Know how to define arguments in a function and how to pass values in
-[] Write functions using traditional and arrow syntax
+- Finish JS, using pseudocode and separate levels. Do level one first etc. 
+- Write rules of game more clearly
 
 DONE BELOW HERE
 
