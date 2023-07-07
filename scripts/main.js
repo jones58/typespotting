@@ -10,55 +10,32 @@ function randomColorScheme() {
 /* random colour scheme on launch */
 window.addEventListener("load", () => {
   randomColorScheme();
-  randomStartingImage();
+  randomLevelOneImage();
 });
 
+/* selecting image on page */
 let imageElement = document.querySelector("img");
 
 /* random image within level 1 */
-function randomStartingImage() {
-  let randomNumber1 = Math.floor(Math.random() * 7);
+let levelOneNumbers = [1, 2, 3, 4, 5, 6];
+function randomLevelOneImage() {
+  let randomOneIndex = Math.floor(
+    Math.random() * levelOneNumbers.length
+  );
+  let randomOne = levelOneNumbers[randomOneIndex];
+  levelOneNumbers.splice(randomOneIndex, 1);
   imageElement.setAttribute(
     "src",
-    "images/level1/" + randomNumber1 + ".jpeg"
-  );
-  console.log(hello);
-}
-
-/* random image within level 2 */
-function randomLevelTwoImage() {
-  let randomNumber2 = Math.floor(Math.random() * 7);
-  imageElement.setAttribute(
-    "src",
-    "images/level2/" + randomNumber2 + ".jpeg"
+    "images/level1/" + randomOne + ".jpeg"
   );
 }
-
-/* random image within level 3 */
-function randomLevelThreeImage() {
-  let randomNumber3 = Math.floor(Math.random() * 9);
-  imageElement.setAttribute(
-    "src",
-    "images/level3/" + randomNumber3 + ".jpeg"
-  );
-}
-
-/* select score and set starting score */
-let scoreHTML = document.getElementById("score");
-let scoreNumber = 300;
-
-/* start score at 300 and take 1 point off score per second using time intervals */
-function timeScoreDown() {
-  scoreNumber -= 1;
-  scoreHTML.textContent = "Score: " + scoreNumber.toString();
-}
-setInterval(timeScoreDown, 1000);
 
 /* x y points in image - if click within set x y for particular image (1 of 6) then win. */
 
 if ((randomNumber1 = 1)) {
   /* if click within set x y, win() */
   /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
+  randomLevelOneImage();
 }
 
 if ((randomNumber1 = 2)) {
@@ -85,6 +62,40 @@ if ((randomNumber1 = 6)) {
   /* if click within set x y, win() */
   /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
 }
+
+/* random image within level 2 */
+let levelTwoNumbers = [1, 2, 3, 4, 5, 6];
+function randomLevelTwoImage() {
+  let randomTwoIndex = Math.floor(
+    Math.random() * levelTwoNumbers.length
+  );
+  let randomTwo = levelTwoNumbers[randomTwoIndex];
+  levelTwoNumbers.splice(randomTwoIndex, 1);
+  imageElement.setAttribute(
+    "src",
+    "images/level1/" + randomTwo + ".jpeg"
+  );
+}
+
+/* random image within level 3 */
+function randomLevelThreeImage() {
+  let randomNumber3 = Math.floor(Math.random() * 9);
+  imageElement.setAttribute(
+    "src",
+    "images/level3/" + randomNumber3 + ".jpeg"
+  );
+}
+
+/* select score and set starting score */
+let scoreHTML = document.getElementById("score");
+let scoreNumber = 300;
+
+/* start score at 300 and take 1 point off score per second using time intervals */
+function timeScoreDown() {
+  scoreNumber -= 1;
+  scoreHTML.textContent = "Score: " + scoreNumber.toString();
+}
+setInterval(timeScoreDown, 1000);
 
 /* win function 
 - display : inline the right answer text (#right-answer)
