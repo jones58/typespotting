@@ -16,7 +16,6 @@ window.addEventListener("load", () => {
 let imageElement = document.querySelector("img");
 
 /* random image within level 1 */
-
 function randomStartingImage() {
   let randomNumber1 = Math.floor(Math.random() * 7);
   imageElement.setAttribute(
@@ -47,6 +46,7 @@ function randomLevelThreeImage() {
 /* select score and set starting score */
 let scoreHTML = document.getElementById("score");
 let scoreNumber = 300;
+
 /* start score at 300 and take 1 point off score per second using time intervals */
 function timeScoreDown() {
   scoreNumber -= 1;
@@ -54,14 +54,43 @@ function timeScoreDown() {
 }
 setInterval(timeScoreDown, 1000);
 
-/* x y points in image - if click within set x y for particular image (1 of 6) then win. 
-/* when click Cooper Black (within set x y): 
-- highlight where Cooper Black is / the set x y coordinates. 
+/* x y points in image - if click within set x y for particular image (1 of 6) then win. */
+
+if ((randomNumber1 = 1)) {
+  /* if click within set x y, win() */
+  /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
+}
+
+if ((randomNumber1 = 2)) {
+  /* if click within set x y, win() */
+  /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
+}
+
+if ((randomNumber1 = 3)) {
+  /* if click within set x y, win() */
+  /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
+}
+
+if ((randomNumber1 = 4)) {
+  /* if click within set x y, win() */
+  /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
+}
+
+if ((randomNumber1 = 5)) {
+  /* if click within set x y, win() */
+  /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
+}
+
+if ((randomNumber1 = 6)) {
+  /* if click within set x y, win() */
+  /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
+}
+
+/* win function 
 - display : inline the right answer text (#right-answer)
 - add 5 to score */
 
-/* when click wrong place/font: 
-- highlight where cooper black is
+/* lose function 
 - display : inline the wrong answer text (#wrong-answer)
 - take 5 off score */
 
