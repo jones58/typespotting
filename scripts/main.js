@@ -29,39 +29,65 @@ function levelOneImage() {
     "images/level1/" + randomOne + ".jpeg"
   );
 
-  if ((randomOne === 1)) {
-    /* adding click event listener to image */
-    imageElement.addEventListener("click", getClickPositionImageOne); 
+  /* adding click event listener to image */
+  imageElement.addEventListener("click", getClickPositionLevelOne);
 
-    function getClickPositionimageOne(event) {
-      const x = event.offsetX;
-      const y = event.offsetY;
-        if ((x >= 0 && x <= 300 && y >= 0 && y <= 300)) {console.log("hello")};
-        else {
-          console.log("goodbye");
-          /*- highlight where Cooper Black is / the set x y coordinates. */
-        }
-      randomLevelOneImage();
+  function getClickPositionLevelOne(event) {
+    const x = event.offsetX;
+    const y = event.offsetY;
+
+    if (randomOne === 1) {
+      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+        console.log("hello");
+        levelOneImage();
+      } else {
+        console.log("goodbye");
+        /*- highlight where Cooper Black is / the set x y coordinates. */
+      }
+    } else if (randomOne === 2) {
+      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+        console.log("hello");
+        levelOneImage();
+      } else {
+        console.log("goodbye");
+        /*- highlight where Cooper Black is / the set x y coordinates. */
+      }
+    } else if (randomOne === 3) {
+      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+        console.log("hello");
+        levelOneImage();
+      } else {
+        console.log("goodbye");
+        /*- highlight where Cooper Black is / the set x y coordinates. */
+      }
+    } else if (randomOne === 4) {
+      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+        console.log("hello");
+        levelOneImage();
+      } else {
+        console.log("goodbye");
+        /*- highlight where Cooper Black is / the set x y coordinates. */
+      }
+    } else if (randomOne === 5) {
+      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+        console.log("hello");
+        levelOneImage();
+      } else {
+        console.log("goodbye");
+        /*- highlight where Cooper Black is / the set x y coordinates. */
+      }
+    } else if (randomOne === 6) {
+      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+        console.log("hello");
+        levelOneImage();
+      } else {
+        console.log("goodbye");
+        /*- highlight where Cooper Black is / the set x y coordinates. */
+      }
+    } else {
+      /* if randomOne is undefined, ie. no numbers left to randomly generate, it's time for level 2 */
+      levelTwoImage();
     }
-    } 
-  else if ((randomOne === 2)) {
-    /* if click within set x y, win() */
-    /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
-  } else if ((randomOne === 3)) {
-    /* if click within set x y, win() */
-    /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
-  } else if ((randomOne === 4)) {
-    /* if click within set x y, win() */
-    /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
-  } else if ((randomOne === 5)) {
-    /* if click within set x y, win() */
-    /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
-  } else if ((randomOne === 6)) {
-    /* if click within set x y, win() */
-    /* if click outside set x y, lose() , - highlight where Cooper Black is / the set x y coordinates. */
-  } else {
-    /* if randomOne is undefined, ie. no numbers left to randomly generate, it's time for level 2 */
-    levelTwoImage();
   }
 }
 
