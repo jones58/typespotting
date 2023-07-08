@@ -56,7 +56,9 @@
   - I cropped and made them square in Photoshop and named them 1-6, 1-6, 1-8 in each of the folders. Gave them same extension too for each manipulation with Javascript.
 - At this point I showed my game (and some of the functionality like the random colour scheme) to people at Founders and Coders Meetup. It was great to get some early user feedback on my game - both a confidence boost and a chance to refine my idea and really focus on what it is I want the purpose of the game to be and how to express this. I decided I wanted to write out the rules of the game more clearly.
 - I continued writing pseudocode to work out what the javascript needed to look like. At this point I realised my random image generator (for level 1, level 2, level 3) was lacking because it would just generate random images, not removing the options that have been generated already. I decided I needed an array, following on from reading a fellow FAC applicant's code the day before (Sam). This took a lot of time to get right, after a lot of debugging with console.log() in RunJS I had a usable function. When i got this code right, i made sure i could easily change it for level 2 and 3, by swapping the "One" in variable names for "two", "three".
--
+- I next had to work out how to get x y coordinates of clicks on the image, to check if they match where Cooper Black is in the images.
+  - I tried to get ChatGPT to show me this but, whilst I understood the code it was giving me, I wanted another explanation so I found [this one](https://www.kirupa.com/html5/getting_mouse_click_position.htm#). While only the top of the article is relevant to this example (I am only finding the x y position within the image) it did help explain things clearly. 
+  - 
 
 TODO:
 - Finish JS, using pseudocode and separate levels. Do level one first etc. 
@@ -66,7 +68,7 @@ DONE BELOW HERE
 
 If I were to keep going and make this game more complicated, I would:
 
-- Make a new level (4) where trick fonts are introduced - visually similar fonts to Cooper Black as tricks to test players.
+- Make a new level (4) where trick fonts are introduced - visually similar fonts to Cooper Black as tricks to test players. There's a folder of such fonts in my images folder, under "tricks"
 
 - Introduce other fonts so it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly advertising and its power over our lives. [Everything is architecture, everyone an architect!](https://pbs.twimg.com/media/Dlh_mOmWsAIN9mo.jpg)
 
