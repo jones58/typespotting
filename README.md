@@ -61,7 +61,7 @@
   - I then built this code into my game, testing it with console.log(hello) at first, and the full x y coordinates of the image (i.e when image clicked, console.logs hello). This helped me test the functionality of the code, making logical choices and writing as little code as possible, while keeping it clear what was happening.
 
 TODO:
-
+- Work out why is console logging hello so many times, like adding event listener too much??
 - Finish JS, using pseudocode and separate levels. Do level one first etc.
 - Write rules of game more clearly
 
