@@ -31,7 +31,6 @@ function levelOneImage() {
 
   /* adding click event listener to image */
   imageElement.addEventListener("click", getClickPositionLevelOne);
-
   function getClickPositionLevelOne(event) {
     const x = event.offsetX;
     const y = event.offsetY;
