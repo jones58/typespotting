@@ -36,7 +36,7 @@
     - I copied the SVG direct from Photoshop (click the layer/group and click "copy SVG"), saved it into a new SVG file and then edited it a little in Illustrator, using image tracing.
       - It was good to be able to make basic edits to the SVG in VSCodium and more complex ones in Illustrator and this is definitely something I want to look at more.
     - In sketching out the site, I made several choices:
-      - Base the scoring system on 300 minus the time in seconds since the game begins.  This would keep the UI clean and give a simple scoring system - each photo out of the twenty would take 10 seconds or less for the user to guess, or they'd get a negative score.
+      - Base the scoring system on 300 minus the time in seconds since the game begins.  This would keep the UI clean and give a simple scoring system - each photo out of the twenty would take 10 seconds or less for the user to guess, or they'd get a negative score. I eventually decided to set this to 0, based on a friend's advice - since most games start with a score of 0. I set the interval to 10 seconds to give the user more of a chance. 
         - Extra minus points (5) for clicking the wrong place.
       - Make all the images square and design for mobile first. Hence the position of the design in the centre of the page. Desktop users could enjoy the negative space and bold colours of my nine colour schemes.
       - Make text aligned to horizontal axis, for easy button placement. Then the buttons invisible (use border solid to help place them maybe)
@@ -65,12 +65,16 @@
     - Using equality operator wrong (= instead of ===).
   - I separated all the bits of what I wanted my code to do and console.logged, as well as using live server (along with browser developer tools to view the console)
   - Giving them the most basic functionality. For example, I set click coordinates to anywhere, to test that clicking was triggering what i wanted to happen. This process gave me a lot of confidence and allowed me to write general code which i could dial in for different images and levels.
+- I next used some pseudocode to write the win and lose functions for my game. This was relatively easy as I had already worked out the win and lose behaviour (+5, -5, display relevant text)
+- 
 
 ///// TODO:
 
-- Win and lose functions, making pseudocode into real code.
+
 - Write rules of game more clearly
-- Potentially change score functionality //////
+  - change per to "for each"
+- Shouldn't show undefined at the end of levels, should go straight onto next level. 
+ //////
 
 If I were to keep going and make this game more complicated, I would:
 
