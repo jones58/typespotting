@@ -67,6 +67,8 @@
   - Giving them the most basic functionality. For example, I set click coordinates to anywhere, to test that clicking was triggering what i wanted to happen. This process gave me a lot of confidence and allowed me to write general code which i could dial in for different images and levels.
 
 ///// TODO:
+
+- Win and lose functions, making pseudocode into real code.
 - Write rules of game more clearly
 - Potentially change score functionality //////
 
