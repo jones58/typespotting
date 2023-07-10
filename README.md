@@ -72,15 +72,16 @@
   - I changed right and wrong answer text display to inline with set attribute. This took awhile to get the right syntax, and displaying right and wrong at different times but i figured it out with some help from ChatGPT.
 - I next realised the images were changing to an undefined image at the end of the level (rather than going straight to the next level) so I fixed this by:
   - Adding a check for the randomOneImage, randomTwoImage, randomThreeImage before setting the image SRC attribute (```if (randomOneImage > 0)``` rather than later on in the code, where it was in the ```checkClickPosition``` function, where the image has already been set.
-- Next i wanted to change the color scheme for each image, so i called randomColorScheme() function within the win() function. This proved a good start, but after a few wins the color scheme wouldn't change so I realised the best way of doing this would be 
+- Next i wanted to change the color scheme for each image, so i called randomColorScheme() function within the win() function. This proved a good start, but after a few wins the color scheme wouldn't change (probably too many classes set on top of each other) so I realised the best way of doing this would be to remove the existing color scheme before setting a new one. I did this within the randomColorScheme() function, using a for loop to choose the color scheme class and remove it.
 - I
 
 ///// TODO:
-- coordinates - work out way to do it quickly using photoshop maybe. Ask ChatGPT. 
+
+- coordinates - work out way to do it quickly using photoshop maybe. Ask ChatGPT.
 - hide restart game until win or lose happened (same as wrong/right text basically but never resets)
 - change console.log("that's the end of the game") to what happens at end of game
 - user testing
-- - write rules of game more clearly maybe
+  - - write rules of game more clearly maybe
  //////
 
 If I were to keep going and make this game more complicated, I would:
