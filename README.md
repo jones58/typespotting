@@ -67,9 +67,8 @@
   - Giving them the most basic functionality. For example, I set click coordinates to anywhere, to test that clicking was triggering what i wanted to happen. This process gave me a lot of confidence and allowed me to write general code which i could dial in for different images and levels.
 
 ///// TODO:
-
-- Finish JS, using pseudocode and separate levels. Do level one first etc.
-- Write rules of game more clearly //////
+- Write rules of game more clearly
+- Potentially change score functionality //////
 
 If I were to keep going and make this game more complicated, I would:
 
