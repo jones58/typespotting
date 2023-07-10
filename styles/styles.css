@@ -131,5 +131,5 @@ a {
   text-align: center;
   text-decoration: none;
   color: currentColor;
-  filter: contrast(150%);
+  filter: contrast(300%);
 }
