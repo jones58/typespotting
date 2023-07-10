@@ -4,6 +4,9 @@ let htmlElement = document.getElementById("html");
 /* random color scheme out of 9 */
 function randomColorScheme() {
   let randomColorScheme = Math.floor(Math.random() * 10);
+  for (let i = 0; i < 10; i++) {
+    htmlElement.classList.remove("colorscheme" + i);
+  }
   htmlElement.classList.add("colorscheme" + randomColorScheme);
 }
 
@@ -18,14 +21,19 @@ window.addEventListener("load", () => {
 
 let rightAnswerText = document.getElementById("right-answer");
 let wrongAnswerText = document.getElementById("wrong-answer");
+let howToText = document.getElementById("how-to");
 
 function win() {
-  rightAnswerText.setAttribute("style", "display:block;"));
+  wrongAnswerText.setAttribute("style", "display:none;");
+  rightAnswerText.setAttribute("style", "display:block;");
+  howToText.setAttribute("style", "display:none;");
   scoreNumber += 5;
   scoreHTML.textContent = "Score: " + scoreNumber.toString();
+  randomColorScheme();
 }
 
 function lose() {
+  rightAnswerText.setAttribute("style", "display:none;");
   wrongAnswerText.setAttribute("style", "display:block;");
   scoreNumber -= 5;
   scoreHTML.textContent = "Score: " + scoreNumber.toString();
@@ -100,7 +108,9 @@ function levelThreeImage() {
       "images/level3/" + randomThreeImage + ".jpeg"
     );
   } else {
-    console.log("that's the end of the game");
+    /* what happens when game ends */
+    imageElement.setAttribute("style", "display:none;");
+    rightAnswerText.setAttribute("style", "display:none;");
   }
 }
 
@@ -272,8 +282,6 @@ function checkClickPosition(x, y) {
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     }
-  } else {
-    console.log("we have a problem");
   }
 }
 
