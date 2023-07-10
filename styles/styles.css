@@ -96,6 +96,7 @@ p3 {
 
 #how-to,
 #score,
+#restart,
 #right-answer,
 #wrong-answer {
   width: 300px;
@@ -123,4 +124,12 @@ h2 {
 
 h3 {
   margin-bottom: 10px;
+}
+
+#restart,
+a {
+  text-align: center;
+  text-decoration: none;
+  color: currentColor;
+  filter: contrast(150%);
 }
