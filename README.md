@@ -59,17 +59,23 @@
 - I next had to work out how to get x y coordinates of clicks on the image, to check if they match where Cooper Black is in the images.
   - I tried to get ChatGPT to show me this but, whilst I understood the code it was giving me, I wanted another explanation so I found [this one](https://www.kirupa.com/html5/getting_mouse_click_position.htm#). While only the top of the article is relevant to this example (I am only finding the x y position within the image) it did help explain things clearly.
   - I then built this code into my game, testing it with console.log(hello) at first, and the full x y coordinates of the image (i.e when image clicked, console.logs hello). This helped me test the functionality of the code, making logical choices and writing as little code as possible, while keeping it clear what was happening.
-  - It took me a long time to debug this properly - most of the issue was with getting functions tangled and not defining variables globally but locally. I separated all the bits of what I wanted my code to do, giving them the most basic functionality to solve issues. For example, I set click coordinates to anywhere, to test that clicking was triggering what i wanted to happen. This process gave me a lot of confidence and allowed me to write general code which i could dial in for different images and levels. 
-  - 
+- It took me a long time to debug this properly.
+    - Common issues were: 
+      -  Getting functions tangled and not defining variables globally but locally.
+      -  Using equality operator wrong (= instead of ===). 
+    -  To debug:
+       -   I separated all the bits of what I wanted my code to do and console.logged, as well as using live server (along with browser developer tools to view the console)
+       -  Giving them the most basic functionality. For example, I set click coordinates to anywhere, to test that clicking was triggering what i wanted to happen. This process gave me a lot of confidence and allowed me to write general code which i could dial in for different images and levels. 
 
 ///// TODO:
 
-- Split into verify position function.
 - Finish JS, using pseudocode and separate levels. Do level one first etc.
 - Write rules of game more clearly //////
 
+
 If I were to keep going and make this game more complicated, I would:
 
+- Random clicking - take points off when the user randomly clicks, or set some kind of safeguard to stop images changing when user randomly clicks too quickly. 
 - Make a new level (4) where trick fonts are introduced - visually similar fonts to Cooper Black as tricks to test players. There's a folder of such fonts in my images folder, under "tricks"
 
 - Introduce other fonts so it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly advertising and its power over our lives. [Everything is architecture, everyone an architect!](https://pbs.twimg.com/media/Dlh_mOmWsAIN9mo.jpg)
