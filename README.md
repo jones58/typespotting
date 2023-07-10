@@ -76,13 +76,13 @@
 - End of the game: This was relatively easy - i wanted the final image to disappear so i got it to display:none, then i wanted any text saying right answer to disappear so i did the same to that, leaving just score and restart option.
 
 ///// TODO:
-
 - coordinates - work out way to do it quickly using photoshop maybe. Ask ChatGPT.
 - change end of the game bit so score doesn't change at end - basically break out of the interval.
 - maybe some kind of ranking system at end like "type nerd", "type beginner" based on score. Or getting 90+ gets a prize, triggers something happening. 100 is highest possible score so this could trigger something too. 
 - hide restart game until win or lose happened (same as wrong/right text basically but never resets)
 - user testing
 - write rules of game more clearly maybe
+- look at other where's wally game for what happens when wally clicked/not clicked - like highlights an area. Basically more interactivity is possible. 
  //////
 
 If I were to keep going and make this game more complicated, I would:
