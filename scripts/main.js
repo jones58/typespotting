@@ -16,6 +16,21 @@ window.addEventListener("load", () => {
   levelOneImage();
 });
 
+let rightAnswerText = document.getElementById("right-answer");
+let wrongAnswerText = document.getElementById("wrong-answer");
+
+function win() {
+  rightAnswerText.setAttribute("style", "display:block;"));
+  scoreNumber += 5;
+  scoreHTML.textContent = "Score: " + scoreNumber.toString();
+}
+
+function lose() {
+  wrongAnswerText.setAttribute("style", "display:block;");
+  scoreNumber -= 5;
+  scoreHTML.textContent = "Score: " + scoreNumber.toString();
+}
+
 /* selecting image on page */
 let imageElement = document.querySelector("img");
 
@@ -29,7 +44,7 @@ function getClickPosition(event) {
   checkClickPosition(x, y);
 }
 
-/* random image within level 1 */
+/* setting random image within level 1 */
 let levelOneNumbers = [1, 2, 3, 4, 5, 6];
 let randomOneImage = 0;
 function levelOneImage() {
@@ -39,13 +54,17 @@ function levelOneImage() {
   );
   randomOneImage = levelOneNumbers[randomOneIndex];
   levelOneNumbers.splice(randomOneIndex, 1);
-  imageElement.setAttribute(
-    "src",
-    "images/level1/" + randomOneImage + ".jpeg"
-  );
+  if (randomOneImage > 0) {
+    imageElement.setAttribute(
+      "src",
+      "images/level1/" + randomOneImage + ".jpeg"
+    );
+  } else {
+    levelTwoImage();
+  }
 }
 
-/* random image within level 2 */
+/* setting random image within level 2 */
 let levelTwoNumbers = [1, 2, 3, 4, 5, 6];
 let randomTwoImage = 0;
 function levelTwoImage() {
@@ -55,13 +74,17 @@ function levelTwoImage() {
   );
   randomTwoImage = levelTwoNumbers[randomTwoIndex];
   levelTwoNumbers.splice(randomTwoIndex, 1);
-  imageElement.setAttribute(
-    "src",
-    "images/level2/" + randomTwoImage + ".jpeg"
-  );
+  if (randomTwoImage > 0) {
+    imageElement.setAttribute(
+      "src",
+      "images/level2/" + randomTwoImage + ".jpeg"
+    );
+  } else {
+    levelThreeImage();
+  }
 }
 
-/* random image within level 3 */
+/* setting random image within level 3 */
 let levelThreeNumbers = [1, 2, 3, 4, 5, 6, 7, 8];
 let randomThreeImage = 0;
 function levelThreeImage() {
@@ -71,10 +94,14 @@ function levelThreeImage() {
   );
   randomThreeImage = levelThreeNumbers[randomThreeIndex];
   levelThreeNumbers.splice(randomThreeIndex, 1);
-  imageElement.setAttribute(
-    "src",
-    "images/level3/" + randomThreeImage + ".jpeg"
-  );
+  if (randomThreeImage > 0) {
+    imageElement.setAttribute(
+      "src",
+      "images/level3/" + randomThreeImage + ".jpeg"
+    );
+  } else {
+    console.log("that's the end of the game");
+  }
 }
 
 /* check click position, passing in x and y from above */
@@ -82,178 +109,168 @@ function checkClickPosition(x, y) {
   if (level === 1) {
     if (randomOneImage === 1) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelOneImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomOneImage === 2) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelOneImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomOneImage === 3) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelOneImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomOneImage === 4) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelOneImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomOneImage === 5) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelOneImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomOneImage === 6) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelOneImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
-    } else {
-      /* if randomOne is undefined, ie. no numbers left to randomly generate, it's time for level 2 */
-      levelTwoImage();
     }
   } else if (level === 2) {
     if (randomTwoImage === 1) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelTwoImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomTwoImage === 2) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelTwoImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomTwoImage === 3) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelTwoImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomTwoImage === 4) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelTwoImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomTwoImage === 5) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelTwoImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomTwoImage === 6) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelTwoImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
-    } else {
-      /* if randomTwoImage is undefined, ie. no numbers left to randomly generate, it's time for level 3 */
-      levelThreeImage();
     }
   } else if (level === 3) {
     if (randomThreeImage === 1) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelThreeImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 2) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelThreeImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 3) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelThreeImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 4) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelThreeImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 5) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelThreeImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 6) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelThreeImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 7) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelThreeImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 8) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
-        console.log("hello");
+        win();
         levelThreeImage();
       } else if (x > 300) {
-        console.log("goodbye");
+        lose();
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
-    } else {
-      /* if randomThreeImage is undefined, ie. no numbers left to randomly generate, it's the end of the game */
-      console.log("that's the end of the game");
-      /* hide the image so just text which reads end of game or something */
     }
   } else {
     console.log("we have a problem");
@@ -262,24 +279,11 @@ function checkClickPosition(x, y) {
 
 /* select score and set starting score */
 let scoreHTML = document.getElementById("score");
-let scoreNumber = 300;
+let scoreNumber = 0;
 
 /* start score at 300 and take 1 point off score per second using time intervals */
 function timeScoreDown() {
   scoreNumber -= 1;
   scoreHTML.textContent = "Score: " + scoreNumber.toString();
 }
-setInterval(timeScoreDown, 1000);
-
-/* win function 
-- display : inline the right answer text (#right-answer)
-- add 5 to score 
-*/
-
-function win() {}
-
-/* lose function
-- display : inline the wrong answer text (#wrong-answer)
-- take 5 off score  */
-
-function lose() {}
+setInterval(timeScoreDown, 10000);
