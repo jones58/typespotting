@@ -36,7 +36,7 @@
     - I copied the SVG direct from Photoshop (click the layer/group and click "copy SVG"), saved it into a new SVG file and then edited it a little in Illustrator, using image tracing.
       - It was good to be able to make basic edits to the SVG in VSCodium and more complex ones in Illustrator and this is definitely something I want to look at more.
     - In sketching out the site, I made several choices:
-      - Base the scoring system on 300 minus the time in seconds since the game begins.  This would keep the UI clean and give a simple scoring system - each photo out of the twenty would take 10 seconds or less for the user to guess, or they'd get a negative score. I eventually decided to set this to 0, based on a friend's advice - since most games start with a score of 0. I set the interval to 10 seconds to give the user more of a chance. 
+      - Base the scoring system on 300 minus the time in seconds since the game begins.  This would keep the UI clean and give a simple scoring system - each photo out of the twenty would take 10 seconds or less for the user to guess, or they'd get a negative score. I eventually decided to set this to 0, based on a friend's advice - since most games start with a score of 0. I set the interval to 10 seconds to give the user more of a chance.
         - Extra minus points (5) for clicking the wrong place.
       - Make all the images square and design for mobile first. Hence the position of the design in the centre of the page. Desktop users could enjoy the negative space and bold colours of my nine colour schemes.
       - Make text aligned to horizontal axis, for easy button placement. Then the buttons invisible (use border solid to help place them maybe)
@@ -65,18 +65,22 @@
     - Using equality operator wrong (= instead of ===).
   - I separated all the bits of what I wanted my code to do and console.logged, as well as using live server (along with browser developer tools to view the console)
   - Giving them the most basic functionality. For example, I set click coordinates to anywhere, to test that clicking was triggering what i wanted to happen. This process gave me a lot of confidence and allowed me to write general code which i could dial in for different images and levels.
-- I next used some pseudocode to write the win and lose functions for my game. This was relatively easy as I had already worked out the win and lose behaviour (+5, -5, display relevant text). 
-  - Because I previously had a lot of ```console.log(hello)``` / ```(goodbye)``` written where I wanted my win and lose functions to be called, I had to go through these and replace them. 
+- I next used some pseudocode to write the win and lose functions for my game. This was relatively easy as I had already worked out the win and lose behaviour (+5, -5, display relevant text).
+  - Because I previously had a lot of ```console.log(hello)``` / ```(goodbye)``` written where I wanted my win and lose functions to be called, I had to go through these and replace them.
     - I tried doing this quickly with chatGPT but it proved unreliable so I learnt about multiple cursors from [here](https://davidamos.dev/vs-code-multi-cursors/)
-      - cmd + shift + L did the trick, allowing me to select and replace all occurences of ```console.log("hello")```. 
+      - cmd + shift + L did the trick, allowing me to select and replace all occurences of ```console.log("hello")```.
+  - I changed right and wrong answer text display to inline with set attribute. This took awhile to get the right syntax, and displaying right and wrong at different times but i figured it out with some help from ChatGPT.
 - I next realised the images were changing to an undefined image at the end of the level (rather than going straight to the next level) so I fixed this by:
-  -  Adding a check for the randomOneImage, randomTwoImage, randomThreeImage before setting the image SRC attribute (```if (randomOneImage > 0)``` rather than later on in the code, where it was in the ```checkClickPosition``` function, where the image has already been set. 
-  - 
+  - Adding a check for the randomOneImage, randomTwoImage, randomThreeImage before setting the image SRC attribute (```if (randomOneImage > 0)``` rather than later on in the code, where it was in the ```checkClickPosition``` function, where the image has already been set.
+- Next i wanted to change the color scheme for each image, so i called randomColorScheme() function within the win() function. This proved a good start, but after a few wins the color scheme wouldn't change so I realised the best way of doing this would be 
+- I
 
 ///// TODO:
-- change right and wrong answer display to inline with set attribute
-- Write rules of game more clearly
-  - change per to "for each"
+- coordinates - work out way to do it quickly using photoshop maybe. Ask ChatGPT. 
+- hide restart game until win or lose happened (same as wrong/right text basically but never resets)
+- change console.log("that's the end of the game") to what happens at end of game
+- user testing
+- - write rules of game more clearly maybe
  //////
 
 If I were to keep going and make this game more complicated, I would:
