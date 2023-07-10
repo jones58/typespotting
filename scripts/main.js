@@ -251,8 +251,9 @@ function checkClickPosition(x, y) {
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else {
-      /* if randomTwoImage is undefined, ie. no numbers left to randomly generate, it's time for level 3 */
+      /* if randomThreeImage is undefined, ie. no numbers left to randomly generate, it's the end of the game */
       console.log("that's the end of the game");
+      /* hide the image so just text which reads end of game or something */
     }
   } else {
     console.log("we have a problem");
@@ -270,16 +271,15 @@ function timeScoreDown() {
 }
 setInterval(timeScoreDown, 1000);
 
-/* win function for level 1 
+/* win function 
 - display : inline the right answer text (#right-answer)
 - add 5 to score 
-- change image in level, or if played all six numbers, go to next level 
+*/
 
-function win() {} */
+function win() {}
 
-/* lose function  for level 1
+/* lose function
 - display : inline the wrong answer text (#wrong-answer)
-- take 5 off score 
-- change image in level, or if played all six numbers, go to next level
+- take 5 off score  */
 
-function lose() {} */
+function lose() {}
