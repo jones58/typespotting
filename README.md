@@ -65,15 +65,18 @@
     - Using equality operator wrong (= instead of ===).
   - I separated all the bits of what I wanted my code to do and console.logged, as well as using live server (along with browser developer tools to view the console)
   - Giving them the most basic functionality. For example, I set click coordinates to anywhere, to test that clicking was triggering what i wanted to happen. This process gave me a lot of confidence and allowed me to write general code which i could dial in for different images and levels.
-- I next used some pseudocode to write the win and lose functions for my game. This was relatively easy as I had already worked out the win and lose behaviour (+5, -5, display relevant text)
-- 
+- I next used some pseudocode to write the win and lose functions for my game. This was relatively easy as I had already worked out the win and lose behaviour (+5, -5, display relevant text). 
+  - Because I previously had a lot of ```console.log(hello)``` / ```(goodbye)``` written where I wanted my win and lose functions to be called, I had to go through these and replace them. 
+    - I tried doing this quickly with chatGPT but it proved unreliable so I learnt about multiple cursors from [here](https://davidamos.dev/vs-code-multi-cursors/)
+      - cmd + shift + L did the trick, allowing me to select and replace all occurences of ```console.log("hello")```. 
+- I next realised the images were changing to an undefined image at the end of the level (rather than going straight to the next level) so I fixed this by:
+  -  Adding a check for the randomOneImage, randomTwoImage, randomThreeImage before setting the image SRC attribute (```if (randomOneImage > 0)``` rather than later on in the code, where it was in the ```checkClickPosition``` function, where the image has already been set. 
+  - 
 
 ///// TODO:
-
-
+- change right and wrong answer display to inline with set attribute
 - Write rules of game more clearly
   - change per to "for each"
-- Shouldn't show undefined at the end of levels, should go straight onto next level. 
  //////
 
 If I were to keep going and make this game more complicated, I would:
