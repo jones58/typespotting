@@ -7,7 +7,10 @@ function randomColorScheme() {
   htmlElement.classList.add("colorscheme" + randomColorScheme);
 }
 
-/* random colour scheme on launch */
+/* setting level variable globally */
+let level = 0;
+
+/* random colour scheme, triggering level one on launch */
 window.addEventListener("load", () => {
   randomColorScheme();
   levelOneImage();
@@ -16,30 +19,41 @@ window.addEventListener("load", () => {
 /* selecting image on page */
 let imageElement = document.querySelector("img");
 
-/* random image within level 1 */
+/* adding click event listener to image */
+imageElement.addEventListener("click", getClickPosition);
+
+/* get click position */
+function getClickPosition(event) {
+  const x = event.offsetX;
+  const y = event.offsetY;
+  checkClickPosition(x, y);
+}
+
 let levelOneNumbers = [1, 2, 3, 4, 5, 6];
+let randomOne = 0;
+
+/* random image within level 1 */
 function levelOneImage() {
+  level = 1;
   let randomOneIndex = Math.floor(
     Math.random() * levelOneNumbers.length
   );
-  let randomOne = levelOneNumbers[randomOneIndex];
+  randomOne = levelOneNumbers[randomOneIndex];
   levelOneNumbers.splice(randomOneIndex, 1);
   imageElement.setAttribute(
     "src",
     "images/level1/" + randomOne + ".jpeg"
   );
+}
 
-  /* adding click event listener to image */
-  imageElement.addEventListener("click", getClickPositionLevelOne);
-  function getClickPositionLevelOne(event) {
-    const x = event.offsetX;
-    const y = event.offsetY;
-
+function checkClickPosition(x, y) {
+  /* checking click position*/
+  if ((level = 1)) {
     if (randomOne === 1) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         console.log("hello");
         levelOneImage();
-      } else {
+      } else if (x > 300) {
         console.log("goodbye");
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
@@ -47,7 +61,7 @@ function levelOneImage() {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         console.log("hello");
         levelOneImage();
-      } else {
+      } else if (x > 300) {
         console.log("goodbye");
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
@@ -55,7 +69,7 @@ function levelOneImage() {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         console.log("hello");
         levelOneImage();
-      } else {
+      } else if (x > 300) {
         console.log("goodbye");
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
@@ -63,7 +77,7 @@ function levelOneImage() {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         console.log("hello");
         levelOneImage();
-      } else {
+      } else if (x > 300) {
         console.log("goodbye");
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
@@ -71,7 +85,7 @@ function levelOneImage() {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         console.log("hello");
         levelOneImage();
-      } else {
+      } else if (x > 300) {
         console.log("goodbye");
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
@@ -79,18 +93,20 @@ function levelOneImage() {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         console.log("hello");
         levelOneImage();
-      } else {
+      } else if (x > 300) {
         console.log("goodbye");
         /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else {
       /* if randomOne is undefined, ie. no numbers left to randomly generate, it's time for level 2 */
-      levelTwoImage();
+      console.log("that's all six");
     }
+  } else {
+    console.log("we have a problem");
   }
 }
 
-/* random image within level 2 */
+/* random image within level 2 
 let levelTwoNumbers = [1, 2, 3, 4, 5, 6];
 function levelTwoImage() {
   let randomTwoIndex = Math.floor(
@@ -102,9 +118,9 @@ function levelTwoImage() {
     "src",
     "images/level2/" + randomTwo + ".jpeg"
   );
-}
+} */
 
-/* random image within level 3 */
+/* random image within level 3 
 let levelThreeNumbers = [1, 2, 3, 4, 5, 6, 7, 8];
 function levelThreeImage() {
   let randomThreeIndex = Math.floor(
@@ -117,6 +133,8 @@ function levelThreeImage() {
     "images/level3/" + randomThree + ".jpeg"
   );
 }
+
+*/
 
 /* select score and set starting score */
 let scoreHTML = document.getElementById("score");
@@ -132,13 +150,13 @@ setInterval(timeScoreDown, 1000);
 /* win function for level 1 
 - display : inline the right answer text (#right-answer)
 - add 5 to score 
-- change image in level, or if played all six numbers, go to next level */
+- change image in level, or if played all six numbers, go to next level 
 
-function win() {}
+function win() {} */
 
 /* lose function  for level 1
 - display : inline the wrong answer text (#wrong-answer)
 - take 5 off score 
-- change image in level, or if played all six numbers, go to next level */
+- change image in level, or if played all six numbers, go to next level
 
-function lose() {}
+function lose() {} */
