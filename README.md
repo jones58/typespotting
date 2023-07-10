@@ -79,6 +79,7 @@
 
 - coordinates - work out way to do it quickly using photoshop maybe. Ask ChatGPT.
 - change end of the game bit so score doesn't change at end - basically break out of the interval.
+- maybe some kind of ranking system at end like "type nerd", "type beginner" based on score. Or getting 90+ gets a prize, triggers something happening. 100 is highest possible score so this could trigger something too. 
 - hide restart game until win or lose happened (same as wrong/right text basically but never resets)
 - user testing
 - write rules of game more clearly maybe
