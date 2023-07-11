@@ -1,11 +1,16 @@
 html {
   box-sizing: border-box;
-  font-family: "Cooper Std";
+  font-family: "CooperBlack";
   font-size: 16px;
   padding: 0;
   width: 100vw;
   margin: 0, auto;
   line-height: 1.2rem;
+}
+
+@font-face {
+  font-family: "CooperBlack";
+  src: url(fonts/CooperBlackStd.otf) format ("opentype");
 }
 
 /* nine color schemes */
