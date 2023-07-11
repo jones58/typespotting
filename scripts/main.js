@@ -123,7 +123,6 @@ function checkClickPosition(x, y) {
         levelOneImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomOneImage === 2) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -131,7 +130,6 @@ function checkClickPosition(x, y) {
         levelOneImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomOneImage === 3) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -139,7 +137,6 @@ function checkClickPosition(x, y) {
         levelOneImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomOneImage === 4) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -147,7 +144,6 @@ function checkClickPosition(x, y) {
         levelOneImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomOneImage === 5) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -155,7 +151,6 @@ function checkClickPosition(x, y) {
         levelOneImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomOneImage === 6) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -163,7 +158,6 @@ function checkClickPosition(x, y) {
         levelOneImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     }
   } else if (level === 2) {
@@ -173,7 +167,6 @@ function checkClickPosition(x, y) {
         levelTwoImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomTwoImage === 2) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -181,7 +174,6 @@ function checkClickPosition(x, y) {
         levelTwoImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomTwoImage === 3) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -189,7 +181,6 @@ function checkClickPosition(x, y) {
         levelTwoImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomTwoImage === 4) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -197,7 +188,6 @@ function checkClickPosition(x, y) {
         levelTwoImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomTwoImage === 5) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -205,7 +195,6 @@ function checkClickPosition(x, y) {
         levelTwoImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomTwoImage === 6) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -213,7 +202,6 @@ function checkClickPosition(x, y) {
         levelTwoImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     }
   } else if (level === 3) {
@@ -223,7 +211,6 @@ function checkClickPosition(x, y) {
         levelThreeImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 2) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -231,7 +218,6 @@ function checkClickPosition(x, y) {
         levelThreeImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 3) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -239,7 +225,6 @@ function checkClickPosition(x, y) {
         levelThreeImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 4) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -247,7 +232,6 @@ function checkClickPosition(x, y) {
         levelThreeImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 5) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -255,7 +239,6 @@ function checkClickPosition(x, y) {
         levelThreeImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 6) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -263,7 +246,6 @@ function checkClickPosition(x, y) {
         levelThreeImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 7) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -271,7 +253,6 @@ function checkClickPosition(x, y) {
         levelThreeImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     } else if (randomThreeImage === 8) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
@@ -279,7 +260,6 @@ function checkClickPosition(x, y) {
         levelThreeImage();
       } else if (x > 300) {
         lose();
-        /*- highlight where Cooper Black is / the set x y coordinates. */
       }
     }
   }
