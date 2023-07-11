@@ -136,5 +136,5 @@ a {
   text-align: center;
   text-decoration: none;
   color: currentColor;
-  filter: contrast(300%);
+  font-size: 2rem;
 }
