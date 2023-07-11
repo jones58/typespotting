@@ -74,15 +74,27 @@
   - Adding a check for the randomOneImage, randomTwoImage, randomThreeImage before setting the image SRC attribute (```if (randomOneImage > 0)``` rather than later on in the code, where it was in the ```checkClickPosition``` function, where the image has already been set.
 - Next i wanted to change the color scheme for each image, so i called randomColorScheme() function within the win() function. This proved a good start, but after a few wins the color scheme wouldn't change (probably too many classes set on top of each other) so I realised the best way of doing this would be to remove the existing color scheme before setting a new one. I did this within the randomColorScheme() function, using a for loop to choose the color scheme class and remove it.
 - End of the game: This was relatively easy - i wanted the final image to disappear so i got it to display:none, then i wanted any text saying right answer to disappear so i did the same to that, leaving just score and restart option.
+- During user testing, the idea for some background music came up. 
 
 ///// TODO:
+
+- fix cooper black font not showing on user device if not installed - work out how to load. Might already be in my code just needs tweaking. Can deactivate cooper black in font book to test.  
 - coordinates - work out way to do it quickly using photoshop maybe. Ask ChatGPT.
 - change end of the game bit so score doesn't change at end - basically break out of the interval.
-- maybe some kind of ranking system at end like "type nerd", "type beginner" based on score. Or getting 90+ gets a prize, triggers something happening. 100 is highest possible score so this could trigger something too. 
+- maybe some kind of ranking system at end like "type nerd", "type beginner" based on score. Or getting 90+ gets a prize, triggers something happening. 100 is highest possible score so this could trigger something too.
 - hide restart game until win or lose happened (same as wrong/right text basically but never resets)
 - user testing
 - write rules of game more clearly maybe
-- look at other where's wally game for what happens when wally clicked/not clicked - like highlights an area. Basically more interactivity is possible. 
+- see music to download
+- Click to start, so timer doesn't start til then. Let's play.... This is basically so it doesn't start
+- level up announcement and then it goes to next one
+- When game done, well done! And picture of Oswald Bruce cooper
+- welcome screen instead of first image
+- setting high score with save to local storage 
+- Make restart game all caps or make it bigger, and same colour
+- End screen - Oswald Bruce cooper cut out with speech bubble saying well done
+- Link to learn more about cooper black - YouTube video or something
+- 
  //////
 
 If I were to keep going and make this game more complicated, I would:
