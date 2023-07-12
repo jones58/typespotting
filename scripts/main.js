@@ -162,103 +162,112 @@ function checkClickPosition(x, y) {
     }
   } else if (level === 2) {
     if (randomTwoImage === 1) {
-      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+      if (
+        (x >= 36.75 && x <= 162.75 && y >= 102.25 && y <= 136.5) ||
+        (x >= 158.75 && x <= 181.75 && y >= 138.5 && y <= 145.5)
+      ) {
         win();
         levelTwoImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomTwoImage === 2) {
-      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+      if (x >= 36.25 && x <= 236.5 && y >= 100.75 && y <= 130) {
         win();
         levelTwoImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomTwoImage === 3) {
-      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+      if (x >= 19.5 && x <= 174 && y >= 21.25 && y <= 142.5) {
         win();
         levelTwoImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomTwoImage === 4) {
-      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+      if (
+        (x >= 9.25 && x <= 159.25 && y >= 55 && y <= 201.5) ||
+        (x >= 37.25 && x <= 142.5 && y >= 208.5 && y <= 233)
+      ) {
         win();
         levelTwoImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomTwoImage === 5) {
-      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+      if (
+        (x >= 194.25 && x <= 287 && y >= 13.25 && y <= 40) ||
+        (x >= 61.25 && x <= 178 && y >= 147 && y <= 168)
+      ) {
         win();
         levelTwoImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomTwoImage === 6) {
-      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+      if (x >= 15.75 && x <= 302 && y >= 63.25 && y <= 113) {
         win();
         levelTwoImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     }
   } else if (level === 3) {
     if (randomThreeImage === 1) {
-      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+      if (x >= 24.5 && x <= 276 && y >= 114.25 && y <= 151) {
         win();
         levelThreeImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomThreeImage === 2) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         win();
         levelThreeImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomThreeImage === 3) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         win();
         levelThreeImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomThreeImage === 4) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         win();
         levelThreeImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomThreeImage === 5) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         win();
         levelThreeImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomThreeImage === 6) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         win();
         levelThreeImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomThreeImage === 7) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         win();
         levelThreeImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomThreeImage === 8) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         win();
         levelThreeImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     }
