@@ -84,7 +84,7 @@
   - I plugged these values into my JS (after dividing by 4) and it was great to see the game working as it should. 
 
 ///// TODO:
-- add level 2 and 3 coordinates (divide by 4 first)
+- add level 2 and 3 coordinates (finish dividing by 4 first)
 - change end of the game bit so score doesn't change at end - basically break out of the interval.
 - maybe some kind of ranking system at end like "type nerd", "type beginner" based on score. Or getting 90+ gets a prize, triggers something happening. 100 is highest possible score so this could trigger something too.
 - hide restart game until win or lose happened (same as wrong/right text basically but never resets)
@@ -106,9 +106,7 @@
 - Link to learn more about cooper black - YouTube video. 
 - Check image sources below
 
-
-
- //////
+ /////
 
 If I were to keep going and make this game more complicated, I would:
 
