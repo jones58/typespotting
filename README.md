@@ -82,10 +82,9 @@
     - finding the coordinates of the rectangles top-left corner from the properties bar. 
     - getting the max x y value by adding the width to the x value and adding the height to the y value. 
   - I plugged these values into my JS (after dividing by 4) and it was great to see the game working as it should. 
+    - One of the images didn't work so I had to debug, and realised the image was at the wrong size (900px x 900px) so I had to times the coordinates by 4 (to get to 1200) and divide by 3 (to get to 300px) to get the right value. 
 
-///// TODO:
-- debug with new coordinates - 
-    - just easyjet image to fix (level 2 image 1), do coordinates again tbh. 
+///// TODO: 
 - change end of the game bit so score doesn't change at end - basically break out of the interval.
 - maybe some kind of ranking system at end like "type nerd", "type beginner" based on score. Or getting 90+ gets a prize, triggers something happening. 100 is highest possible score so this could trigger something too.
 - hide restart game until win or lose happened (same as wrong/right text basically but never resets)
