@@ -75,33 +75,28 @@
 - Next i wanted to change the color scheme for each image, so i called randomColorScheme() function within the win() function. This proved a good start, but after a few wins the color scheme wouldn't change (probably too many classes set on top of each other) so I realised the best way of doing this would be to remove the existing color scheme before setting a new one. I did this within the randomColorScheme() function, using a for loop to choose the color scheme class and remove it.
 - End of the game: This was relatively easy - i wanted the final image to disappear so i got it to display:none, then i wanted any text saying right answer to disappear so i did the same to that, leaving just score and restart option.
 - Chatting to Mohammed at FAC meetup, I realised a lot of my images were bigger than the 2mb that's generally advised for websites to enable them to load quickly. I fixed this with an Image Optimiser app.
-- When I tested the game on another device, I noticed that the font wasn't loading properly, and instead defaulted to sans-serif. This was because the font was activated on my personal computer, rather than loading from the github repo. I spent a long time attempting to fix this, before using developer tools in the browser to find the error, ChatGPT to decode the jargon from these error messages, and then realising the fonts folder needed to be in the styles folder (it's referenced from the CSS). I realised the html code for this font loading was redundant at this point so i deleted it.
-- I started off with clicking anywhere on the image triggering the win function, just to get the basic functionality of the game right. This obviously needed fixing, so I set about trying to fix it. I had already worked out I needed to set coordinates within the image, so my task was to get those coordinates. ///
-  - I made all the images 300px x 300px (this is the size they are displayed at so makes sense) to enable me to choose the coordinates properly and uniformly for each. I used [this method](https://www.idownloadblog.com/2013/10/19/how-to-resize-multiple-images-mac/) in Preview. 
-  - drew a rectangle on the images in photoshop, then read the x and y positions of those rectangles. ////
-
-
-
-
-
-- During user testing, the idea for some background music came up. my partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track.  
-  - see music to download
+- When I tested the game on another device, I noticed that the font wasn't loading properly, and instead defaulted to sans-serif. This was because the font was activated on my personal computer, rather than loading from the github repo. I spent a long time attempting to fix this, before using developer tools in the browser to find the error, ChatGPT to decode the jargon from these error messages, and then realising the fonts folder needed to be in the styles folder (it's referenced from the CSS). I realised the html code for this font loading was redundant at this point so i deleted it, too. 
+- During user testing, the idea for some background music came up. 
+- 
 
 ///// TODO:
+
+- fix cooper black font not showing on user device if not installed - work out how to load. Might already be in my code just needs tweaking. Can deactivate cooper black in font book to test.  
+- coordinates - work out way to do it quickly using photoshop maybe. Ask ChatGPT.
 - change end of the game bit so score doesn't change at end - basically break out of the interval.
 - maybe some kind of ranking system at end like "type nerd", "type beginner" based on score. Or getting 90+ gets a prize, triggers something happening. 100 is highest possible score so this could trigger something too.
 - hide restart game until win or lose happened (same as wrong/right text basically but never resets)
-- Click to start, so timer doesn't start til then. "Let's play..."
+- user testing
+- write rules of game more clearly maybe
+- see music to download
+- Click to start, so timer doesn't start til then. Let's play.... This is basically so it doesn't start
 - level up announcement and then it goes to next one
+- When game done, well done! And picture of Oswald Bruce cooper
 - welcome screen instead of first image
 - setting high score with save to local storage 
 - Make restart game all caps or make it bigger, and same colour
-- When game done, end screen with picture of Oswald Bruce cooperOswald Bruce cooper cut out with speech bubble saying well done
-- Link to learn more about cooper black - YouTube video. 
-- Check image sources below 
-- music changes every time start game, random number 1-10 index in array. 
-- Sound on/off button
-- can you change device volume with javascript
+- End screen - Oswald Bruce cooper cut out with speech bubble saying well done
+- Link to learn more about cooper black - YouTube video or something
 - 
  //////
 
@@ -112,7 +107,9 @@ If I were to keep going and make this game more complicated, I would:
 
 - Introduce other fonts so it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly advertising and its power over our lives. [Everything is architecture, everyone an architect!](https://pbs.twimg.com/media/Dlh_mOmWsAIN9mo.jpg)
 
-- Add sound effects for win/lose to make the game more interactive.
+- Add sound
+  - Background music would be great, my partner suggested music from the albums that use Cooper Black.
+  - Sound effects for win/lose to make the game more interactive.
 
 ## Image Sources
 
