@@ -163,8 +163,8 @@ function checkClickPosition(x, y) {
   } else if (level === 2) {
     if (randomTwoImage === 1) {
       if (
-        (x >= 36.75 && x <= 162.75 && y >= 102.25 && y <= 136.5) ||
-        (x >= 158.75 && x <= 181.75 && y >= 138.5 && y <= 145.5)
+        (x >= 49 && x <= 217 && y >= 136.33 && y <= 182) ||
+        (x >= 211.66 && x <= 242.33 && y >= 184.66 && y <= 194)
       ) {
         win();
         levelTwoImage();
