@@ -81,6 +81,7 @@
   - drew a rectangle on the images in photoshop, then wrote down the x and y positions of those rectangles by: 
     - finding the coordinates of the rectangles top-left corner from the properties bar. 
     - getting the max x y value by adding the width to the x value and adding the height to the y value. 
+  - I plugged these values into my JS (after dividing by 4) and it was great to see the game working as it should. 
 
 
 - During user testing, the idea for some background music came up.  my partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track.  
@@ -88,18 +89,14 @@
 - 
 
 ///// TODO:
-
-- fix cooper black font not showing on user device if not installed - work out how to load. Might already be in my code just needs tweaking. Can deactivate cooper black in font book to test.  
-- coordinates - work out way to do it quickly using photoshop maybe. Ask ChatGPT.
 - change end of the game bit so score doesn't change at end - basically break out of the interval.
 - maybe some kind of ranking system at end like "type nerd", "type beginner" based on score. Or getting 90+ gets a prize, triggers something happening. 100 is highest possible score so this could trigger something too.
 - hide restart game until win or lose happened (same as wrong/right text basically but never resets)
-- user testing
-- write rules of game more clearly maybe
-- see music to download
-- sound on off button 
-- music array 1-10 random generate
-- Click to start, so timer doesn't start til then. Let's play.... This is basically so it doesn't start
+- music changes every time start game, random number 1-10 index in array. 
+  - sound on off button (svg icon)
+  - see music to download
+  - can you change device volume with javascript
+- Click to start, so timer doesn't start til then. Let's play.... 
 - level up announcement and then it goes to next one
 - When game done, well done! And picture of Oswald Bruce cooper
 - welcome screen instead of first image
@@ -109,12 +106,10 @@
 - Link to learn more about cooper black - YouTube video 
 - - When game done, end screen with picture of Oswald Bruce cooperOswald Bruce cooper cut out with speech bubble saying well done
 - Link to learn more about cooper black - YouTube video. 
-- Check image sources below 
-- music changes every time start game, random number 1-10 index in array. 
-- Sound on/off button
-- can you change device volume with javascript
-- - Click to start, so timer doesn't start til then. "Let's play..."
-- 
+- Check image sources below
+
+
+
  //////
 
 If I were to keep going and make this game more complicated, I would:

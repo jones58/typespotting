@@ -118,45 +118,45 @@ function levelThreeImage() {
 function checkClickPosition(x, y) {
   if (level === 1) {
     if (randomOneImage === 1) {
-      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+      if (x >= 16 && x <= 280 && y >= 109.5 && y <= 192) {
         win();
         levelOneImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomOneImage === 2) {
-      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+      if (x >= 77.25 && x <= 287 && y >= 129.5 && y <= 179) {
         win();
         levelOneImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomOneImage === 3) {
-      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+      if (x >= 41 && x <= 257 && y >= 167.75 && y <= 300) {
         win();
         levelOneImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomOneImage === 4) {
       if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
         win();
         levelOneImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomOneImage === 5) {
-      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+      if (x >= 0 && x <= 262 && y >= 0 && y <= 85.75) {
         win();
         levelOneImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     } else if (randomOneImage === 6) {
-      if (x >= 0 && x <= 300 && y >= 0 && y <= 300) {
+      if (x >= 61.5 && x <= 192.25 && y >= 186.5 && y <= 300) {
         win();
         levelOneImage();
-      } else if (x > 300) {
+      } else {
         lose();
       }
     }
@@ -275,3 +275,8 @@ function timeScoreDown() {
   scoreHTML.textContent = "Score: " + scoreNumber.toString();
 }
 setInterval(timeScoreDown, 10000);
+
+/* music 
+array 
+random song from array 
+play */
