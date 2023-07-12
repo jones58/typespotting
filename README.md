@@ -83,19 +83,17 @@
     - getting the max x y value by adding the width to the x value and adding the height to the y value. 
   - I plugged these values into my JS (after dividing by 4) and it was great to see the game working as it should. 
 
-
-- During user testing, the idea for some background music came up.  my partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track.  
-  - see music to download
-- 
-
 ///// TODO:
+- add level 2 and 3 coordinates (divide by 4 first)
 - change end of the game bit so score doesn't change at end - basically break out of the interval.
 - maybe some kind of ranking system at end like "type nerd", "type beginner" based on score. Or getting 90+ gets a prize, triggers something happening. 100 is highest possible score so this could trigger something too.
 - hide restart game until win or lose happened (same as wrong/right text basically but never resets)
 - music changes every time start game, random number 1-10 index in array. 
+  - see music to download
   - sound on off button (svg icon)
   - see music to download
   - can you change device volume with javascript
+  - add to above: "- During user testing, the idea for some background music came up.  my partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track."
 - Click to start, so timer doesn't start til then. Let's play.... 
 - level up announcement and then it goes to next one
 - When game done, well done! And picture of Oswald Bruce cooper
