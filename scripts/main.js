@@ -17,6 +17,7 @@ let level = 0;
 window.addEventListener("load", () => {
   randomColorScheme();
   levelOneImage();
+  playBackgroundSong();
 });
 
 let rightAnswerText = document.getElementById("right-answer");
