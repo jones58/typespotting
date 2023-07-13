@@ -86,10 +86,15 @@
 - I set the restart button to only show after the first image (after a win/lose basically) using the same setAttribute method as with the wrong answer and right answer text.
 - During user testing, the idea for some background music came up.  My partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track.
   - I wrote pseudocode and made the random song selector in a similar way to the random color scheme.
+  - I got ChatGPT to teach me the basics of playing music and setting audio volume. 
+  - I realised one of the songs was pretty offputting (On the Corner by Miles Davis), so i removed it. 
+- During user testing, watching users play my game i realised it would be much more intuitive to have a start scren with the rules and any info on it rather than images and a lot of information. 
+  - I wrote pseudocode and set about changing the existing code to make this work. 
+  - I added a let's play button and styled it with CSS and currentColor. 
 
 ///// TODO:
 - Start screen
-  - welcome screen instead of first image
+
   - Let's play.... button
   - Click to start, so timer doesn't start til then.
   - Link to learn more about cooper black - YouTube video.
@@ -174,7 +179,6 @@ Music sources:
   - Blues and Pants by James Brown: https://www.youtube.com/watch?v=WuKLL2Qt1_A
   - Keep Talkin' by Lonnie Smith: https://www.youtube.com/watch?v=BnFeFgR_hu4
   - Lost by Frank Ocean: https://www.youtube.com/watch?v=Qhavokaear4
-  - On the Corner by Miles Davis: https://www.youtube.com/watch?v=AIqXprCArdo
   - The Business by De La Soul: https://www.youtube.com/watch?v=osZq3Ah4LpM 
   - Henrietta by The Fratellis: https://www.youtube.com/watch?v=3g1VmtJR_vE 
   - All Day and All of the Night by the Kinks: https://www.youtube.com/watch?v=GFw5ndIA0Z8
