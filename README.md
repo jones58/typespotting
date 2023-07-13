@@ -75,37 +75,34 @@
 - Next i wanted to change the color scheme for each image, so i called randomColorScheme() function within the win() function. This proved a good start, but after a few wins the color scheme wouldn't change (probably too many classes set on top of each other) so I realised the best way of doing this would be to remove the existing color scheme before setting a new one. I did this within the randomColorScheme() function, using a for loop to choose the color scheme class and remove it.
 - End of the game: This was relatively easy - i wanted the final image to disappear so i got it to display:none, then i wanted any text saying right answer to disappear so i did the same to that, leaving just score and restart option.
 - Chatting to Mohammed at FAC meetup, I realised a lot of my images were bigger than the 2mb that's generally advised for websites to enable them to load quickly. I fixed this with an Image Optimiser app.
-- When I tested the game on another device, I noticed that the font wasn't loading properly, and instead defaulted to sans-serif. This was because the font was activated on my personal computer, rather than loading from the github repo. I spent a long time attempting to fix this, before using developer tools in the browser to find the error, ChatGPT to decode the jargon from these error messages, and then realising the fonts folder needed to be in the styles folder (it's referenced from the CSS). I realised the html code for this font loading was redundant at this point so i deleted it, too. 
+- When I tested the game on another device, I noticed that the font wasn't loading properly, and instead defaulted to sans-serif. This was because the font was activated on my personal computer, rather than loading from the github repo. I spent a long time attempting to fix this, before using developer tools in the browser to find the error, ChatGPT to decode the jargon from these error messages, and then realising the fonts folder needed to be in the styles folder (it's referenced from the CSS). I realised the html code for this font loading was redundant at this point so i deleted it, too.
 - I started off with clicking anywhere on the image triggering the win function, just to get the basic functionality of the game right. This obviously needed fixing, so I set about trying to fix it. I had already worked out I needed to set coordinates within the image, so my task was to get those coordinates and add them to my JS.  
-  - I made all the images 300px x 300px (this is the size they are displayed at so makes sense) to enable me to choose the coordinates properly and uniformly for each. I used [this method](https://www.idownloadblog.com/2013/10/19/how-to-resize-multiple-images-mac/) in Preview. Looking on the live server site, I noticed that I'd made the images too grainy for users who might want to zoom in - so i reverted the changes and used 1200 x 1200px instead. I knew this would complicate things slightly but that I could just divide by 4 in my calculations to get to 300px by 300px. 
-  - drew a rectangle on the images in photoshop, then wrote down the x and y positions of those rectangles by: 
-    - finding the coordinates of the rectangles top-left corner from the properties bar. 
-    - getting the max x y value by adding the width to the x value and adding the height to the y value. 
-  - I plugged these values into my JS (after dividing by 4) and it was great to see the game working as it should. 
-    - One of the images didn't work so I had to debug, and realised the image was at the wrong size (900px x 900px) so I had to times the coordinates by 4 (to get to 1200) and divide by 3 (to get to 300px) to get the right value. 
+  - I made all the images 300px x 300px (this is the size they are displayed at so makes sense) to enable me to choose the coordinates properly and uniformly for each. I used [this method](https://www.idownloadblog.com/2013/10/19/how-to-resize-multiple-images-mac/) in Preview. Looking on the live server site, I noticed that I'd made the images too grainy for users who might want to zoom in - so i reverted the changes and used 1200 x 1200px instead. I knew this would complicate things slightly but that I could just divide by 4 in my calculations to get to 300px by 300px.
+  - drew a rectangle on the images in photoshop, then wrote down the x and y positions of those rectangles by:
+    - finding the coordinates of the rectangles top-left corner from the properties bar.
+    - getting the max x y value by adding the width to the x value and adding the height to the y value.
+  - I plugged these values into my JS (after dividing by 4) and it was great to see the game working as it should.
+    - One of the images didn't work so I had to debug, and realised the image was at the wrong size (900px x 900px) so I had to times the coordinates by 4 (to get to 1200) and divide by 3 (to get to 300px) to get the right value.
+- I set the restart button to only show after the first image (after a win/lose basically) using the same setAttribute method as with the wrong answer and right answer text.
+- During user testing, the idea for some background music came up.  My partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track.
+  - I wrote pseudocode and made the random song selector in a similar way to the random color scheme.
 
-///// TODO: 
-- change end of the game bit so score doesn't change at end - basically break out of the interval.
-- maybe some kind of ranking system at end like "type nerd", "type beginner" based on score. Or getting 90+ gets a prize, triggers something happening. 100 is highest possible score so this could trigger something too.
-- hide restart game until win or lose happened (same as wrong/right text basically but never resets)
-- music changes every time start game, random number 1-10 index in array. 
+///// TODO:
+
+- Music finish
   - see music to download
-  - sound on off button (svg icon)
-  - see music to download
-  - can you change device volume with javascript
-  - add to above: "- During user testing, the idea for some background music came up.  my partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track."
-- Click to start, so timer doesn't start til then. Let's play.... 
-- level up announcement and then it goes to next one
-- When game done, well done! And picture of Oswald Bruce cooper
-- welcome screen instead of first image
-- setting high score with save to local storage 
-- Make restart game all caps or make it bigger, and same colour
-- End screen - Oswald Bruce cooper cut out with speech bubble saying well done
-- Link to learn more about cooper black - YouTube video 
-- - When game done, end screen with picture of Oswald Bruce cooperOswald Bruce cooper cut out with speech bubble saying well done
-- Link to learn more about cooper black - YouTube video. 
+  - add code to play music
+- Start screen
+  - welcome screen instead of first image
+  - Let's play.... button
+  - Click to start, so timer doesn't start til then.
+  - Link to learn more about cooper black - YouTube video.
+- End screen
+  - Change end of the game bit so score doesn't change at end - basically break out of the interval.
+  - Oswald Bruce cooper cut out with speech bubble saying well done
+  - When game done, end screen with picture of Oswald Bruce cooper cut out with speech bubble saying well done
+- Level up announcement and then it goes to next one
 - Check image sources below
-
  /////
 
 If I were to keep going and make this game more complicated, I would:
@@ -115,9 +112,13 @@ If I were to keep going and make this game more complicated, I would:
 
 - Introduce other fonts so it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly advertising and its power over our lives. [Everything is architecture, everyone an architect!](https://pbs.twimg.com/media/Dlh_mOmWsAIN9mo.jpg)
 
-
-
 - Add sound effects for win/lose to make the game more interactive.
+  
+- Sound on off button for those who don't want backing music.
+
+- Setting high score with save to local storage
+
+- Maybe some kind of ranking system at end like "type nerd", "type beginner" based on score. Or getting 90+ gets a prize, triggers something happening. 100 is highest possible score so this could trigger something too.
 
 ## Image Sources
 

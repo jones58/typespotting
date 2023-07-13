@@ -131,11 +131,16 @@ h3 {
   margin-bottom: 10px;
 }
 
-#restart,
-a {
+#restart {
   text-align: center;
   text-decoration: none;
   color: currentColor;
   font-size: 2rem;
   line-height: 2.4rem;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
 }
