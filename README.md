@@ -86,23 +86,23 @@
 - I set the restart button to only show after the first image (after a win/lose basically) using the same setAttribute method as with the wrong answer and right answer text.
 - During user testing, the idea for some background music came up.  My partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track.
   - I wrote pseudocode and made the random song selector in a similar way to the random color scheme.
-  - I got ChatGPT to teach me the basics of playing music and setting audio volume. 
-  - I realised one of the songs was pretty offputting (On the Corner by Miles Davis), so i removed it. 
-- During user testing, watching users play my game i realised it would be much more intuitive to have a start scren with the rules and any info on it rather than images and a lot of information. 
-  - I wrote pseudocode and set about changing the existing code to make this work. 
-  - I added a let's play button and styled it with CSS and currentColor. 
+  - I got ChatGPT to teach me the basics of playing music and setting audio volume.
+  - I realised one of the songs was pretty offputting (On the Corner by Miles Davis), so i removed it.
+- During user testing, watching users play my game i realised it would be much more intuitive to have a start scren with the rules and any info on it rather than images and a lot of information.
+  - I wrote pseudocode and set about changing the existing code to make this work.
+  - I added a let's play button and styled it with CSS and currentColor.
+  - This also allowed me to change when the score countdown (-1 point for 10 seconds) starts - when the user clicks the let's play button.
 
 ///// TODO:
 - End screen
   - Change end of the game bit so score doesn't change at end - basically break out of the interval.
   - Oswald Bruce cooper cut out with speech bubble saying well done
-  - When game done, end screen with picture of Oswald Bruce cooper cut out with speech bubble saying well done
-- Level up announcement and then it goes to next one
-- Check image sources below
 - read over readme, check for typos etc.
  /////
 
 If I were to keep going and make this game more complicated, I would:
+
+-  Level up announcement and then it goes to next one
 
 - Random clicking - take points off when the user randomly clicks, or set some kind of safeguard to stop images changing when user randomly clicks too quickly.
 - Make a new level (4) where trick fonts are introduced - visually similar fonts to Cooper Black as tricks to test players. There's a folder of such fonts in my images folder, under "tricks"
@@ -119,41 +119,15 @@ If I were to keep going and make this game more complicated, I would:
 
 ## Image Sources
 
-<https://fontsinuse.com/uses/39601/the-beatles-come-together-something-dutch-sin>
-
-<https://fontsinuse.com/uses/37981/thalassa-1976-tv-magazine-logo>
-
-<https://fontsinuse.com/uses/27905/no-deposit-no-return>
-
 <https://fontsinuse.com/uses/2474/the-beach-boys-pet-sounds-album-cover>
 
 <https://fontsinuse.com/uses/4234/vote-for-pedro-shirt-from-napoleon-dynamite>
 
-<https://fontsinuse.com/uses/41141/tudo-que-noiz-tem-e-noiz-t-shirt>
-
-<https://fontsinuse.com/uses/37056/clifford-the-big-red-dog-books>
-
 <https://fontsinuse.com/uses/31627/little-richards-grooviest-17-original-hits-al>
-
-<https://fontsinuse.com/uses/31208/hoch-tief-durch-2019>
-
-<https://fontsinuse.com/uses/29387/whats-arnold-palmer-doing-on-a-bolens-husky-a>
-
-<https://fontsinuse.com/uses/29935/bob-and-carol-and-ted-and-alice-movie-posters>
-
-<https://fontsinuse.com/uses/27844/children-s-jokes-and-riddles-album-art>
-
-<https://fontsinuse.com/uses/25678/little-green-bag-george-baker-selection>
-
-<https://fontsinuse.com/uses/19182/radical-philosophy-issues-26-38>
 
 <https://fontsinuse.com/uses/16586/easyjet>
 
 <https://fontsinuse.com/uses/24856/conways-photosetting-ad>
-
-<https://fontsinuse.com/uses/41747/kes-1969-french-movie-poster>
-
-<https://fontsinuse.com/uses/37816/sea-monkeys-ad-1978>
 
 <https://fontsinuse.com/uses/50047/machine-age-exposition-1927-poster>
 
@@ -161,22 +135,20 @@ If I were to keep going and make this game more complicated, I would:
 
 <https://www.youtube.com/watch?v=Zu91meda2I8>
 
-<https://twitter.com/NickSherman/status/905821528566239232>
-
 <https://fontreviewjournal.com/cooper/>
 
 <https://upload.wikimedia.org/wikipedia/commons/8/87/Cooper_Black_Type_Specimen_%2829488904886%29.jpg>
 
+Music sources:
 
-Music sources: 
-  - Black Unity by Pharaoh Sanders: https://www.youtube.com/watch?v=mNn78K8D7NU
-  - If You Really Love me by Stevie Wonder: https://www.youtube.com/watch?v=CqrNN2naapU 
-  - Blues and Pants by James Brown: https://www.youtube.com/watch?v=WuKLL2Qt1_A
-  - Keep Talkin' by Lonnie Smith: https://www.youtube.com/watch?v=BnFeFgR_hu4
-  - Lost by Frank Ocean: https://www.youtube.com/watch?v=Qhavokaear4
-  - The Business by De La Soul: https://www.youtube.com/watch?v=osZq3Ah4LpM 
-  - Henrietta by The Fratellis: https://www.youtube.com/watch?v=3g1VmtJR_vE 
-  - All Day and All of the Night by the Kinks: https://www.youtube.com/watch?v=GFw5ndIA0Z8
- - Uh Uh by Thundercat: https://www.youtube.com/watch?v=dk_ud0b4yY4
+- Black Unity by Pharaoh Sanders: <https://www.youtube.com/watch?v=mNn78K8D7NU>
+- If You Really Love me by Stevie Wonder: <https://www.youtube.com/watch?v=CqrNN2naapU>
+- Blues and Pants by James Brown: <https://www.youtube.com/watch?v=WuKLL2Qt1_A>
+- Keep Talkin' by Lonnie Smith: <https://www.youtube.com/watch?v=BnFeFgR_hu4>
+- Lost by Frank Ocean: <https://www.youtube.com/watch?v=Qhavokaear4>
+- The Business by De La Soul: <https://www.youtube.com/watch?v=osZq3Ah4LpM>
+- Henrietta by The Fratellis: <https://www.youtube.com/watch?v=3g1VmtJR_vE>
+- All Day and All of the Night by the Kinks: <https://www.youtube.com/watch?v=GFw5ndIA0Z8>
+- Uh Uh by Thundercat: <https://www.youtube.com/watch?v=dk_ud0b4yY4>
 
-* No copyright infringement intended * 
+- No copyright infringement intended *
