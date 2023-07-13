@@ -88,10 +88,6 @@
   - I wrote pseudocode and made the random song selector in a similar way to the random color scheme.
 
 ///// TODO:
-
-- Music finish
-  - see music to download
-  - add code to play music
 - Start screen
   - welcome screen instead of first image
   - Let's play.... button
