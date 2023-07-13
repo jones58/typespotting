@@ -103,6 +103,7 @@
   - When game done, end screen with picture of Oswald Bruce cooper cut out with speech bubble saying well done
 - Level up announcement and then it goes to next one
 - Check image sources below
+- read over readme, check for typos etc. 
  /////
 
 If I were to keep going and make this game more complicated, I would:

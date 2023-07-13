@@ -292,19 +292,21 @@ function timeScoreDown() {
 setInterval(timeScoreDown, 10000);
 
 /* random song selector */
-let songs = [
-  "Black Unity",
-  "If You Really Love Me",
-  "Blues And Pants",
-  "Keep Talkin",
-  "Lost",
-  "On The Corner",
-  "The Bizness",
-  "Henrietta",
-  "All Day And All Of The Night",
-  "Uh Uh",
-];
-let randomSongIndex = Math.floor(Math.random() * 10);
-let randomSong = songs[randomSongIndex];
-
-/* play */
+function playBackgroundSong() {
+  let songs = [
+    "Black Unity",
+    "If You Really Love Me",
+    "Blues And Pants",
+    "Keep Talkin",
+    "Lost",
+    "On The Corner",
+    "The Bizness",
+    "Henrietta",
+    "All Day And All Of The Night",
+    "Uh Uh",
+  ];
+  let randomSongIndex = Math.floor(Math.random() * 10);
+  let randomSong = songs[randomSongIndex];
+  let songAtLocation = new Audio("music/" + randomSong + ".mp3");
+  Audio.play();
+}
