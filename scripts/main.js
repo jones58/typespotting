@@ -21,11 +21,13 @@ window.addEventListener("load", () => {
 
 let rightAnswerText = document.getElementById("right-answer");
 let wrongAnswerText = document.getElementById("wrong-answer");
+let restartButton = document.getElementById("restart");
 let howToText = document.getElementById("how-to");
 
 function win() {
   wrongAnswerText.setAttribute("style", "display:none;");
   rightAnswerText.setAttribute("style", "display:block;");
+  restartButton.setAttribute("style", "display:block");
   howToText.setAttribute("style", "display:none;");
   scoreNumber += 5;
   scoreHTML.textContent = "Score: " + scoreNumber.toString();
@@ -35,6 +37,7 @@ function win() {
 function lose() {
   rightAnswerText.setAttribute("style", "display:none;");
   wrongAnswerText.setAttribute("style", "display:block;");
+  restartButton.setAttribute("style", "display:block");
   scoreNumber -= 5;
   scoreHTML.textContent = "Score: " + scoreNumber.toString();
 }
@@ -288,7 +291,20 @@ function timeScoreDown() {
 }
 setInterval(timeScoreDown, 10000);
 
-/* music 
-array 
-random song from array 
-play */
+/* random song selector */
+let songs = [
+  "Black Unity",
+  "If You Really Love Me",
+  "Blues And Pants",
+  "Keep Talkin",
+  "Lost",
+  "On The Corner",
+  "The Bizness",
+  "Henrietta",
+  "All Day And All Of The Night",
+  "Uh Uh",
+];
+let randomSongIndex = Math.floor(Math.random() * 10);
+let randomSong = songs[randomSongIndex];
+
+/* play */
