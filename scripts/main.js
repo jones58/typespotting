@@ -16,14 +16,17 @@ let level = 0;
 /* random colour scheme, triggering level one on launch */
 window.addEventListener("load", () => {
   randomColorScheme();
-
   playBackgroundSong();
 });
 
-/* start button
-on click, run: 
-
-
+/* start button and start screen */
+let startButton = document.getElementById("start");
+startButton.addEventListener("click", startGame);
+function startGame(event) {
+  levelOneImage();
+  howToText.setAttribute("style", "display:none;");
+  startButton.setAttribute("style", "display:none;");
+}
 
 let rightAnswerText = document.getElementById("right-answer");
 let wrongAnswerText = document.getElementById("wrong-answer");
@@ -34,7 +37,6 @@ function win() {
   wrongAnswerText.setAttribute("style", "display:none;");
   rightAnswerText.setAttribute("style", "display:block;");
   restartButton.setAttribute("style", "display:block");
-  howToText.setAttribute("style", "display:none;");
   scoreNumber += 5;
   scoreHTML.textContent = "Score: " + scoreNumber.toString();
   randomColorScheme();
@@ -65,6 +67,8 @@ function getClickPosition(event) {
 let levelOneNumbers = [1, 2, 3, 4, 5, 6];
 let randomOneImage = 0;
 function levelOneImage() {
+  scoreHTML.setAttribute("style", "display:block");
+  imageElement.setAttribute("style", "display:block");
   level = 1;
   let randomOneIndex = Math.floor(
     Math.random() * levelOneNumbers.length
@@ -76,6 +80,7 @@ function levelOneImage() {
       "src",
       "images/level1/" + randomOneImage + ".jpeg"
     );
+    imageElement.setAttribute("style", "display:block");
   } else {
     levelTwoImage();
   }
