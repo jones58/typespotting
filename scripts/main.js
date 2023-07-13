@@ -26,6 +26,7 @@ function startGame(event) {
   playBackgroundSong();
   howToText.setAttribute("style", "display:none;");
   startButton.setAttribute("style", "display:none;");
+  setInterval(timeScoreDown, 10000);
 }
 /* random song selector */
 function playBackgroundSong() {
@@ -314,9 +315,8 @@ function checkClickPosition(x, y) {
 let scoreHTML = document.getElementById("score");
 let scoreNumber = 0;
 
-/* start score at 300 and take 1 point off score per second using time intervals */
+/* start score at 0 and take 1 point off score per second using time intervals */
 function timeScoreDown() {
   scoreNumber -= 1;
   scoreHTML.textContent = "Score: " + scoreNumber.toString();
 }
-setInterval(timeScoreDown, 10000);
