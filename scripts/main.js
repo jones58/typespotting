@@ -16,7 +16,6 @@ let level = 0;
 /* random colour scheme, triggering level one on launch */
 window.addEventListener("load", () => {
   randomColorScheme();
-  playBackgroundSong();
 });
 
 /* start button and start screen */
@@ -24,8 +23,28 @@ let startButton = document.getElementById("start");
 startButton.addEventListener("click", startGame);
 function startGame(event) {
   levelOneImage();
+  playBackgroundSong();
   howToText.setAttribute("style", "display:none;");
   startButton.setAttribute("style", "display:none;");
+}
+/* random song selector */
+function playBackgroundSong() {
+  let songs = [
+    "Black Unity",
+    "If You Really Love Me",
+    "Blues And Pants",
+    "Keep Talkin",
+    "Lost",
+    "The Bizness",
+    "Henrietta",
+    "All Day And All Of The Night",
+    "Uh Uh",
+  ];
+  let randomSongIndex = Math.floor(Math.random() * 9);
+  let randomSong = songs[randomSongIndex];
+  let songAtLocation = new Audio("music/" + randomSong + ".mp3");
+  songAtLocation.volume = 0.5;
+  songAtLocation.play();
 }
 
 let rightAnswerText = document.getElementById("right-answer");
@@ -301,23 +320,3 @@ function timeScoreDown() {
   scoreHTML.textContent = "Score: " + scoreNumber.toString();
 }
 setInterval(timeScoreDown, 10000);
-
-/* random song selector */
-function playBackgroundSong() {
-  let songs = [
-    "Black Unity",
-    "If You Really Love Me",
-    "Blues And Pants",
-    "Keep Talkin",
-    "Lost",
-    "The Bizness",
-    "Henrietta",
-    "All Day And All Of The Night",
-    "Uh Uh",
-  ];
-  let randomSongIndex = Math.floor(Math.random() * 9);
-  let randomSong = songs[randomSongIndex];
-  let songAtLocation = new Audio("music/" + randomSong + ".mp3");
-  songAtLocation.volume = 0.5;
-  songAtLocation.play();
-}
