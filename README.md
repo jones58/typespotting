@@ -94,15 +94,16 @@
   - This also allowed me to change when the score countdown (-1 point for 10 seconds) starts - when the user clicks the let's play button.
 
 ///// TODO:
+
 - End screen
   - Change end of the game bit so score doesn't change at end - basically break out of the interval.
   - Oswald Bruce cooper cut out with speech bubble saying well done
-- read over readme, check for typos etc.
+- Read over readme, check for typos etc.
  /////
 
 If I were to keep going and make this game more complicated, I would:
 
--  Level up announcement and then it goes to next one
+- Level up announcement to differentiate between levels and introduce next one
 
 - Random clicking - take points off when the user randomly clicks, or set some kind of safeguard to stop images changing when user randomly clicks too quickly.
 - Make a new level (4) where trick fonts are introduced - visually similar fonts to Cooper Black as tricks to test players. There's a folder of such fonts in my images folder, under "tricks"
