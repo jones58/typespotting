@@ -172,7 +172,7 @@ If I were to keep going and make this game more complicated, I would:
 <https://upload.wikimedia.org/wikipedia/commons/8/87/Cooper_Black_Type_Specimen_%2829488904886%29.jpg>
 
 
-Music sources : 
+Music sources: 
   - Black Unity by Pharaoh Sanders: https://www.youtube.com/watch?v=mNn78K8D7NU
   - If You Really Love me by Stevie Wonder: https://www.youtube.com/watch?v=CqrNN2naapU 
   - Blues and Pants by James Brown: https://www.youtube.com/watch?v=WuKLL2Qt1_A

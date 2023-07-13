@@ -309,5 +309,5 @@ function playBackgroundSong() {
   let randomSongIndex = Math.floor(Math.random() * 10);
   let randomSong = songs[randomSongIndex];
   let songAtLocation = new Audio("music/" + randomSong + ".mp3");
-  Audio.play();
+  songAtLocation.play();
 }
