@@ -16,9 +16,14 @@ let level = 0;
 /* random colour scheme, triggering level one on launch */
 window.addEventListener("load", () => {
   randomColorScheme();
-  levelOneImage();
+
   playBackgroundSong();
 });
+
+/* start button
+on click, run: 
+
+
 
 let rightAnswerText = document.getElementById("right-answer");
 let wrongAnswerText = document.getElementById("wrong-answer");
@@ -300,14 +305,14 @@ function playBackgroundSong() {
     "Blues And Pants",
     "Keep Talkin",
     "Lost",
-    "On The Corner",
     "The Bizness",
     "Henrietta",
     "All Day And All Of The Night",
     "Uh Uh",
   ];
-  let randomSongIndex = Math.floor(Math.random() * 10);
+  let randomSongIndex = Math.floor(Math.random() * 9);
   let randomSong = songs[randomSongIndex];
   let songAtLocation = new Audio("music/" + randomSong + ".mp3");
+  songAtLocation.volume = 0.5;
   songAtLocation.play();
 }
