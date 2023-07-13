@@ -93,11 +93,6 @@
   - I added a let's play button and styled it with CSS and currentColor. 
 
 ///// TODO:
-- Start screen
-
-  - Let's play.... button
-  - Click to start, so timer doesn't start til then.
-  - Link to learn more about cooper black - YouTube video.
 - End screen
   - Change end of the game bit so score doesn't change at end - basically break out of the interval.
   - Oswald Bruce cooper cut out with speech bubble saying well done
