@@ -170,3 +170,18 @@ If I were to keep going and make this game more complicated, I would:
 <https://fontreviewjournal.com/cooper/>
 
 <https://upload.wikimedia.org/wikipedia/commons/8/87/Cooper_Black_Type_Specimen_%2829488904886%29.jpg>
+
+
+Music sources : 
+  - Black Unity by Pharaoh Sanders: https://www.youtube.com/watch?v=mNn78K8D7NU
+  - If You Really Love me by Stevie Wonder: https://www.youtube.com/watch?v=CqrNN2naapU 
+  - Blues and Pants by James Brown: https://www.youtube.com/watch?v=WuKLL2Qt1_A
+  - Keep Talkin' by Lonnie Smith: https://www.youtube.com/watch?v=BnFeFgR_hu4
+  - Lost by Frank Ocean: https://www.youtube.com/watch?v=Qhavokaear4
+  - On the Corner by Miles Davis: https://www.youtube.com/watch?v=AIqXprCArdo
+  - The Business by De La Soul: https://www.youtube.com/watch?v=osZq3Ah4LpM 
+  - Henrietta by The Fratellis: https://www.youtube.com/watch?v=3g1VmtJR_vE 
+  - All Day and All of the Night by the Kinks: https://www.youtube.com/watch?v=GFw5ndIA0Z8
+ - Uh Uh by Thundercat: https://www.youtube.com/watch?v=dk_ud0b4yY4
+
+* No copyright infringement intended * 
