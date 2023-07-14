@@ -40,7 +40,7 @@
         - Extra minus points (5) for clicking the wrong place.
       - Make all the images square and design for mobile first. Hence the position of the design in the centre of the page. Desktop users could enjoy the negative space and bold colours of my nine colour schemes.
       - Make text aligned to horizontal axis, for easy button placement. Then the buttons invisible (use border solid to help place them maybe)
-      - Use touch/click as user input - since I want this to work on both mobile and desktop, i'll go for clicking over keyboard inputs.
+      - Use touch/click as user input - since I want this to work on both mobile and desktop, I'll go for clicking over keyboard inputs.
 
 ## Building and Debugging
 
@@ -51,7 +51,7 @@
   - In my testing, I decided to take it down to 9 color schemes because one of the combinations (number 10) wasn't quite readable enough.
 - Next up I set up building my html and CSS, using my planning wireframe as a guide.
   - It was good to realise that I could minimise the svg code in VSCodium
-  - Adding the image, I wondered what size would make sense as a base px width, so i loooked up the smallest mobile width in common active use and it looks like 320px (iPhone 5), so I set the image width to 300px and set left and right margin with calc() to centre the image.
+  - Adding the image, I wondered what size would make sense as a base px width, so i looked up the smallest mobile width in common active use and it looks like 320px (iPhone 5), so I set the image width to 300px and set left and right margin with calc() to centre the image.
 - Decided i wanted 6 easy images (level 1), 6 more medium (level 2) and 8 hard (level 3) to keep it interesting.
   - I cropped and made them square in Photoshop and named them 1-6, 1-6, 1-8 in each of the folders. Gave them same extension too for each manipulation with Javascript.
 - At this point I showed my game (and some of the functionality like the random colour scheme) to people at Founders and Coders Meetup. It was great to get some early user feedback on my game - both a confidence boost and a chance to refine my idea and really focus on what it is I want the purpose of the game to be and how to express this. I decided I wanted to write out the rules of the game more clearly.
@@ -87,7 +87,7 @@
 - During user testing, the idea for some background music came up.  My partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track.
   - I wrote pseudocode and made the random song selector in a similar way to the random color scheme.
   - I got ChatGPT to teach me the basics of playing music and setting audio volume.
-  - I realised two of the songs wete pretty offputting (On the Corner by Miles Davis and Black Unity by Pharoah Sanders), so i removed them. I also noticed some of the songs did not start "on beat", rather with a bit of a pause so i trimmed them to launch the game with a sound.
+  - I realised two of the songs were pretty offputting (On the Corner by Miles Davis and Black Unity by Pharoah Sanders), so i removed them. I also noticed some of the songs did not start "on beat", rather with a bit of a pause so i trimmed them to launch the game with a sound.
 - During user testing, watching users play my game i realised it would be much more intuitive to have a start scren with the rules and any info on it rather than images and a lot of information.
   - I wrote pseudocode and set about changing the existing code to make this work.
   - I added a let's play button and styled it with CSS and currentColor.
@@ -96,9 +96,8 @@
 - Some users complained about the score still decreasing on the game's end point so I made an end screen, to function as a bookend like the start screen.
   - Score doesn't change - by breaking out of interval.
   - I decided i wanted a photo of Cooper Black's designer, Oswald Bruce Cooper, with a speech bubble saying well done on the end screen.
-  - I made it stop the music to make it clear the game is over, setting the songAtLocation variable outside of the song function so it could be accessed within the endGame function. 
+  - I made it stop the music to make it clear the game is over, setting the songAtLocation variable outside of the song function so it could be accessed within the endGame function.
   - I changed the start button only showing at end, as another element that pops up to signify the end. I also changed this to be a button (like the let's play one) rather than just a link, to make it even more clear that it's the end of the game.
-
 
 ##  Improvements
 
@@ -112,7 +111,7 @@ If I were to keep going and make this game more complicated, I would:
 
 - Add sound effects for win/lose to make the game more interactive.
   
-- Sound on off button for those who don't want backing music.
+- Sound on/off button for those who don't want backing music.
 
 - Setting high score with save to local storage
 
