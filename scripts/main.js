@@ -67,7 +67,6 @@ function win() {
 function lose() {
   rightAnswerText.setAttribute("style", "display:none;");
   wrongAnswerText.setAttribute("style", "display:block;");
-  restartButton.setAttribute("style", "display:block");
   scoreNumber -= 5;
   scoreHTML.textContent = "Score: " + scoreNumber.toString();
 }
