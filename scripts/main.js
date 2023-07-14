@@ -100,9 +100,7 @@ function levelOneImage() {
       "src",
       "images/level1/" + randomOneImage + ".jpeg"
     );
-    imageElement.addEventListener("load", () => {
-      imageElement.setAttribute("style", "display:block");
-    });
+    imageElement.setAttribute("style", "display:block");
   } else {
     levelTwoImage();
   }

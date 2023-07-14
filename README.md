@@ -92,13 +92,13 @@
   - I wrote pseudocode and set about changing the existing code to make this work.
   - I added a let's play button and styled it with CSS and currentColor.
   - This also allowed me to change when the score countdown (-1 point for 10 seconds) starts - when the user clicks the let's play button.
-- There was a bug with the game which meant
+- There was a bug with the game which meant that the placeholder (Goblin album cover) for the first image of level one flashed - i initially tried to fix this by adding an on load function for displaying the image only on load of the randomly generated one, but this slowed down the game. I realised the solution was far simpler - the placeholder image could be a blank png. 
 - Some users complained about the score still decreasing on the game's end point so I made an end screen, to function as a bookend like the start screen.
   - Score doesn't change - by breaking out of interval.
   - I decided i wanted a photo of Cooper Black's designer, Oswald Bruce Cooper, with a speech bubble saying well done on the end screen.
   - I made it stop the music to make it clear the game is over, setting the songAtLocation variable outside of the song function so it could be accessed within the endGame function.
   - I changed the start button only showing at end, as another element that pops up to signify the end. I also changed this to be a button (like the let's play one) rather than just a link, to make it even more clear that it's the end of the game.
-  - I ran through the game a few times and tested it on various devices.
+- I ran through the game a few times and tested it on various devices.
 
 ##  Improvements
 
