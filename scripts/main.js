@@ -21,17 +21,20 @@ window.addEventListener("load", () => {
 /* start button and start screen */
 let startButton = document.getElementById("start");
 startButton.addEventListener("click", startGame);
+let intervalId;
 function startGame(event) {
   levelOneImage();
   playBackgroundSong();
   howToText.setAttribute("style", "display:none;");
   startButton.setAttribute("style", "display:none;");
-  setInterval(timeScoreDown, 10000);
+  intervalId = setInterval(timeScoreDown, 10000);
 }
+
+let songAtLocation;
+
 /* random song selector */
 function playBackgroundSong() {
   let songs = [
-    "Black Unity",
     "If You Really Love Me",
     "Blues And Pants",
     "Keep Talkin",
@@ -41,9 +44,9 @@ function playBackgroundSong() {
     "All Day And All Of The Night",
     "Uh Uh",
   ];
-  let randomSongIndex = Math.floor(Math.random() * 9);
+  let randomSongIndex = Math.floor(Math.random() * 8);
   let randomSong = songs[randomSongIndex];
-  let songAtLocation = new Audio("music/" + randomSong + ".mp3");
+  songAtLocation = new Audio("music/" + randomSong + ".mp3");
   songAtLocation.volume = 0.5;
   songAtLocation.play();
 }
@@ -56,7 +59,6 @@ let howToText = document.getElementById("how-to");
 function win() {
   wrongAnswerText.setAttribute("style", "display:none;");
   rightAnswerText.setAttribute("style", "display:block;");
-  restartButton.setAttribute("style", "display:block");
   scoreNumber += 5;
   scoreHTML.textContent = "Score: " + scoreNumber.toString();
   randomColorScheme();
@@ -88,7 +90,6 @@ let levelOneNumbers = [1, 2, 3, 4, 5, 6];
 let randomOneImage = 0;
 function levelOneImage() {
   scoreHTML.setAttribute("style", "display:block");
-  imageElement.setAttribute("style", "display:block");
   level = 1;
   let randomOneIndex = Math.floor(
     Math.random() * levelOneNumbers.length
@@ -100,7 +101,9 @@ function levelOneImage() {
       "src",
       "images/level1/" + randomOneImage + ".jpeg"
     );
-    imageElement.setAttribute("style", "display:block");
+    imageElement.addEventListener("load", () => {
+      imageElement.setAttribute("style", "display:block");
+    });
   } else {
     levelTwoImage();
   }
@@ -142,9 +145,7 @@ function levelThreeImage() {
       "images/level3/" + randomThreeImage + ".jpeg"
     );
   } else {
-    /* what happens when game ends */
-    imageElement.setAttribute("style", "display:none;");
-    rightAnswerText.setAttribute("style", "display:none;");
+    endGame();
   }
 }
 
@@ -319,4 +320,13 @@ let scoreNumber = 0;
 function timeScoreDown() {
   scoreNumber -= 1;
   scoreHTML.textContent = "Score: " + scoreNumber.toString();
+}
+
+function endGame() {
+  /* what happens when game ends */
+  imageElement.setAttribute("src", "images/OswaldCooper.png");
+  rightAnswerText.setAttribute("style", "display:none;");
+  restartButton.setAttribute("style", "display:block;");
+  songAtLocation.pause();
+  clearInterval(intervalId);
 }

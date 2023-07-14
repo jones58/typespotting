@@ -5,7 +5,7 @@
 - It took me a long time to start on this project, for days I wanted to perfect my first project or learn just that little bit more Javascript. I eventually decided to confront it and set aside some time to work on it.
 - Creative block was a big problem too, I wanted to create something original and fun, but wasn't sure where to start so I did what all designers do when they're stuck - I made a mind map. This can be found in the planning folder [here](www.github.com), if you're interested.
   - Moving between different type games online, I found that existing games tended to be split into three categories:
-    - Mutiple choice what font is this game
+    - Multiple choice "What font is this?" game
     - Shoot the font/serif type font
     - Kern/adjust font yourself
   - I made a basic sketch for a what font game where the user types in the name of the font.
@@ -87,25 +87,25 @@
 - During user testing, the idea for some background music came up.  My partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track.
   - I wrote pseudocode and made the random song selector in a similar way to the random color scheme.
   - I got ChatGPT to teach me the basics of playing music and setting audio volume.
-  - I realised one of the songs was pretty offputting (On the Corner by Miles Davis), so i removed it.
+  - I realised two of the songs wete pretty offputting (On the Corner by Miles Davis and Black Unity by Pharoah Sanders), so i removed them. I also noticed some of the songs did not start "on beat", rather with a bit of a pause so i trimmed them to launch the game with a sound.
 - During user testing, watching users play my game i realised it would be much more intuitive to have a start scren with the rules and any info on it rather than images and a lot of information.
   - I wrote pseudocode and set about changing the existing code to make this work.
   - I added a let's play button and styled it with CSS and currentColor.
   - This also allowed me to change when the score countdown (-1 point for 10 seconds) starts - when the user clicks the let's play button.
+- There was a bug with the game which meant
+- Some users complained about the score still decreasing on the game's end point so I made an end screen, to function as a bookend like the start screen.
+  - Score doesn't change - by breaking out of interval.
+  - I decided i wanted a photo of Cooper Black's designer, Oswald Bruce Cooper, with a speech bubble saying well done on the end screen.
+  - I made it stop the music to make it clear the game is over, setting the songAtLocation variable outside of the song function so it could be accessed within the endGame function. 
+  - I changed the start button only showing at end, as another element that pops up to signify the end. I also changed this to be a button (like the let's play one) rather than just a link, to make it even more clear that it's the end of the game.
 
-///// TODO:
 
-- End screen
-  - Change end of the game bit so score doesn't change at end - basically break out of the interval.
-  - Oswald Bruce cooper cut out with speech bubble saying well done
-- Read over readme, check for typos etc.
- /////
+##  Improvements
 
 If I were to keep going and make this game more complicated, I would:
 
 - Level up announcement to differentiate between levels and introduce next one
 
-- Random clicking - take points off when the user randomly clicks, or set some kind of safeguard to stop images changing when user randomly clicks too quickly.
 - Make a new level (4) where trick fonts are introduced - visually similar fonts to Cooper Black as tricks to test players. There's a folder of such fonts in my images folder, under "tricks"
 
 - Introduce other fonts so it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly advertising and its power over our lives. [Everything is architecture, everyone an architect!](https://pbs.twimg.com/media/Dlh_mOmWsAIN9mo.jpg)
@@ -151,5 +151,4 @@ Music sources:
 - Henrietta by The Fratellis: <https://www.youtube.com/watch?v=3g1VmtJR_vE>
 - All Day and All of the Night by the Kinks: <https://www.youtube.com/watch?v=GFw5ndIA0Z8>
 - Uh Uh by Thundercat: <https://www.youtube.com/watch?v=dk_ud0b4yY4>
-
-- No copyright infringement intended *
+- No copyright infringement intended, this game is for educational purposes only.
