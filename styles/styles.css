@@ -158,3 +158,11 @@ a {
 #score {
   display: none;
 }
+
+/* desktop only */
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 18px;
+    padding: 1rem;
+  }
+}
