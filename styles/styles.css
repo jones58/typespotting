@@ -74,6 +74,7 @@ button {
   background-color: transparent;
   color: currentColor;
   border: 3px solid currentColor;
+  border-radius: 10px;
   width: 300px;
   margin-right: calc((100vw - 300px) / 2);
   margin-left: calc((100vw - 300px) / 2);
