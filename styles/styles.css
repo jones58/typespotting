@@ -159,6 +159,14 @@ a {
   display: none;
 }
 
+.click-underline {
+  text-decoration: underline;
+}
+
+.click-underline:hover {
+  filter: brightness(0.8);
+}
+
 /* desktop only */
 @media screen and (min-width: 1280px) {
   html {
