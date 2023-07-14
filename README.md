@@ -98,6 +98,7 @@
   - I decided i wanted a photo of Cooper Black's designer, Oswald Bruce Cooper, with a speech bubble saying well done on the end screen.
   - I made it stop the music to make it clear the game is over, setting the songAtLocation variable outside of the song function so it could be accessed within the endGame function.
   - I changed the start button only showing at end, as another element that pops up to signify the end. I also changed this to be a button (like the let's play one) rather than just a link, to make it even more clear that it's the end of the game.
+  - I ran through the game a few times and tested it on various devices. 
 
 ##  Improvements
 
