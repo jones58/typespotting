@@ -172,5 +172,10 @@ a {
   html {
     font-size: 18px;
     padding: 1rem;
+    transform: scale(1.25);
+    overflow-x: hidden;
+  }
+  svg {
+    margin-top: 50px;
   }
 }
