@@ -2,18 +2,19 @@
 
 ## Planning
 
-- It took me a long time to start on this project, for days I wanted to perfect my first project or learn just that little bit more Javascript. I eventually decided to confront it and set aside some time to work on it.
-- Creative block was a big problem too, I wanted to create something original and fun, but wasn't sure where to start so I did what all designers do when they're stuck - I made a mind map. This can be found in the planning folder [here](www.github.com), if you're interested.
-  - Moving between different type games online, I found that existing games tended to be split into three categories:
+- It took me a long time to start on this project. For days I wanted to perfect my first project, the website, or learn  more JavaScript.  Creative block was a big problem too - I wanted to create something original and fun, but wasn't sure where to start. I eventually decided to confront the project and set aside some time to work on it.
+- I did what many designers do when they're stuck - I made a mind map (which can be found in the planning folder [here](www.github.com))
+  -  Looking at different typography games online, I found that existing games tended to be split into three categories:
     - Multiple choice "What font is this?" game
-    - Shoot the font/serif type font
-    - Kern/adjust font yourself
-  - I made a basic sketch for a what font game where the user types in the name of the font.
+    - Shoot the font/serif font game
+    - Kern/adjust font yourself game
+  - I made a basic sketch for a “What font is this?” game where the user types in the name of the font.
     - This could have been good, as the user would have to type in rather than just clicking a choice.
     - Whilst i didn't come across any game identical to this in my research, I wasn't convinced it would be sufficiently interesting so I abandoned the idea.
-  - I had an idea to make a Where's Wally/ Waldo style game but with fonts! I would find examples of images with fonts in them and the user would have to click within a certain area.
-- I initially wanted to use Helvetica for this game, partly due to its ubiquity, but then I remembered [a video](https://www.youtube.com/watch?v=Zu91meda2I8) I watched a few years ago about Cooper Black and it seemed like a better choice because it's about forty years older than Helvetica and the video already includes a ton of examples of the font in street signs. This would save me time in searching for photos for the game, giving me more time to build and debug.
-- I decided it would make sense if the game increased in difficulty, going from album covers/book covers with just cooper black to street scenes and more complicated graphics.
+  - I noticed a theme in many of these games - the recognition of fonts. This is something I pride myself on - I have familiarised myself with Helvetica, Belwe, Johnston, Neue Haas Grotesk, amongst many others, and when I walk around, I like being able to recognise them on signs and logos. This gave me the idea for a Where's Wally style game but with fonts. I could find images with fonts in them and the user would have to click the specified font in said images.
+- I initially wanted to use Helvetica for this game, partly due to its ubiquity, but then I remembered [a video](https://www.youtube.com/watch?v=Zu91meda2I8) I watched a few years ago about Cooper Black and it seemed like a better choice - it's about forty years older than Helvetica and the video already includes a lot of examples of the font in street signs: this would save me time in searching for photos for the game, giving me more time to build and debug.
+
+- I decided it would make sense if the game increased in difficulty, going from album covers/book covers with just Cooper Black to street scenes and more complicated graphics.
 - I gathered a folder of images, categorising them loosely under three difficulties - level 1, 2 and 3.
   - Whilst I initially wanted to get most of the images from the video linked above, I realised that one of my favourite sites, [Fonts In Use](https://fontsinuse.com/) would be a better and more eclectic source.
   - Surfing Fonts in Use and the wider web,  I saved the links to where I found the images at the bottom of this doc under "sources".
@@ -33,19 +34,20 @@
     - #75C16C and #D57CA8
   - I also realised that using these colour pairs, on a rotating and random basis, when the page loaded and when images changed would help keep up the visual interest of my game with a selection of 20 images and 10 color schemes.
   - I sketched out a basic design for the site, including a very basic logo using tight custom kerning on "typespotting" and a magnifying glass made out of a "t" and "o" from Cooper Black.
-    - I copied the SVG direct from Photoshop (click the layer/group and click "copy SVG"), saved it into a new SVG file and then edited it a little in Illustrator, using image tracing.
+    - I copied the SVG directly from Photoshop (click the layer/group and click "copy SVG"), saved it into a new SVG file and then edited it a little in Illustrator, using image tracing.
       - It was good to be able to make basic edits to the SVG in VSCodium and more complex ones in Illustrator and this is definitely something I want to look at more.
     - In sketching out the site, I made several choices:
       - Base the scoring system on 300 minus the time in seconds since the game begins.  This would keep the UI clean and give a simple scoring system - each photo out of the twenty would take 10 seconds or less for the user to guess, or they'd get a negative score. I eventually decided to set this to 0, based on a friend's advice - since most games start with a score of 0. I set the interval to 10 seconds to give the user more of a chance.
         - Extra minus points (5) for clicking the wrong place.
-      - Make all the images square and design for mobile first. Hence the position of the design in the centre of the page. Desktop users could enjoy the negative space and bold colours of my nine colour schemes.
-      - Make text aligned to horizontal axis, for easy button placement. Then the buttons invisible (use border solid to help place them maybe)
-      - Use touch/click as user input - since I want this to work on both mobile and desktop, I'll go for clicking over keyboard inputs.
+      - Make all the images square and design for mobile first. Hence the position of the design in the centre of the page. Desktop users could enjoy the negative space and bold colours of my nine colour schemes.  (I got rid of one colour scheme because one lacked contrast).
+
+      - Make text aligned to the horizontal axis for easy button placement. Then make the buttons invisible (I wanted to use border solid to help place them)
+      - Use touch/click as user input - since I want this to work on both mobile and desktop, I'd go for clicking over keyboard inputs.
 
 ## Building and Debugging
 
-- I decided i wanted the color scheme to randomise on launch between ten options, so i set about building it. I broke this down, starting with the css then thinking about the js with pseudocode.  
-  - It took me about forty minutes to get this all working, I had to debug as I went along, writing what I thought was the right JS then debugging by wrapping it in a comment and changing the CSS until that worked with the standard "colorScheme1" as the class for html, then going back and fixing the JS, using Console.log(), the RunJS app and ChatGPT as I went along.
+- I decided i wanted the color scheme to randomise on launch between ten options, so i set about building it. I broke this down, starting with the CSS then thinking about the JavaScript with pseudocode.  
+  - It took me about forty minutes to get this all working, I had to debug as I went along, writing what I thought was the right JavaScript, then debugging by wrapping it in a comment and changing the CSS until that worked with the standard "colorScheme1" as the class for HTML, then going back and fixing the JS, using Console.log(), the RunJS app and ChatGPT as I went along.
   - I named and separated this code into it's function named randomColorScheme() so that I could reuse it when I wanted to, like for the images changing.
   - I got pretty excited when I got this working, so much so that I kept reloading the page.
   - In my testing, I decided to take it down to 9 color schemes because one of the combinations (number 10) wasn't quite readable enough.
