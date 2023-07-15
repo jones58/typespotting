@@ -82,7 +82,7 @@
     - finding the coordinates of the rectangles top-left corner from the properties bar.
     - getting the max x y value by adding the width to the x value and adding the height to the y value.
   - I plugged these values into my JS (after dividing by 4) and it was great to see the game working as it should.
-    - One of the images didn't work so I had to debug, and realised the image was at the wrong size (900px x 900px) so I had to times the coordinates by 4 (to get to 1200) and divide by 3 (to get to 300px) to get the right value.
+    - One of the images didn't work so I had to debug, and realised the image was at the wrong size (900px x 900px) so I had to times the coordinates by 4 (to get to 900) and divide by 3 (to get to 300px) to get the right value.
 - I set the restart button to only show after the first image (after a win/lose basically) using the same setAttribute method as with the wrong answer and right answer text.
 - During user testing, the idea for some background music came up.  My partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track.
   - I wrote pseudocode and made the random song selector in a similar way to the random color scheme.
