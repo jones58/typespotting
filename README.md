@@ -48,16 +48,17 @@
 
 - I decided i wanted the color scheme to randomise on launch between ten options, so i set about building it. I broke this down, starting with the CSS then thinking about the JavaScript with pseudocode.  
   - It took me about forty minutes to get this all working, I had to debug as I went along, writing what I thought was the right JavaScript, then debugging by wrapping it in a comment and changing the CSS until that worked with the standard "colorScheme1" as the class for HTML, then going back and fixing the JS, using Console.log(), the RunJS app and ChatGPT as I went along.
-  - I named and separated this code into it's function named randomColorScheme() so that I could reuse it when I wanted to, like for the images changing.
+  - I named and separated this code into its function named randomColorScheme() so that I could reuse it when I wanted to, like for the images changing.
   - I got pretty excited when I got this working, so much so that I kept reloading the page.
   - In my testing, I decided to take it down to 9 color schemes because one of the combinations (number 10) wasn't quite readable enough.
-- Next up I set up building my html and CSS, using my planning wireframe as a guide.
-  - It was good to realise that I could minimise the svg code in VSCodium
-  - Adding the image, I wondered what size would make sense as a base px width, so i looked up the smallest mobile width in common active use and it looks like 320px (iPhone 5), so I set the image width to 300px and set left and right margin with calc() to centre the image.
-- Decided i wanted 6 easy images (level 1), 6 more medium (level 2) and 8 hard (level 3) to keep it interesting.
-  - I cropped and made them square in Photoshop and named them 1-6, 1-6, 1-8 in each of the folders. Gave them same extension too for each manipulation with Javascript.
-- At this point I showed my game (and some of the functionality like the random colour scheme) to people at Founders and Coders Meetup. It was great to get some early user feedback on my game - both a confidence boost and a chance to refine my idea and really focus on what it is I want the purpose of the game to be and how to express this. I decided I wanted to write out the rules of the game more clearly.
-- I continued writing pseudocode to work out what the javascript needed to look like. At this point I realised my random image generator (for level 1, level 2, level 3) was lacking because it would just generate random images, not removing the options that have been generated already. I decided I needed an array, following on from reading a fellow FAC applicant's code the day before (Sam). This took a lot of time to get right, after a lot of debugging with console.log() in RunJS I had a usable function. When i got this code right, i made sure i could easily change it for level 2 and 3, by swapping the "One" in variable names for "two", "three".
+- Next, I set up building my HTML and CSS, using my planning wireframe as a guide.
+  - It was good to realise that I could minimise the svg code in VSCodium.
+  - Adding the image, I wondered what size would make sense as a base px width, so i looked up the smallest mobile width in common active use and it came to be 320px (for iPhone 5), so I set the image width to 300px and set left and right margin with calc() to centre the image.
+- I decided i wanted 6 easy images (level 1), 6 more medium (level 2) and 8 hard (level 3) to keep it interesting.
+  - I cropped and made them square in Photoshop and named them 1-6, 1-6, 1-8 in each of the folders. Gave them same extension too for easy manipulation with JavaScript.
+- At this point I showed my game (and some of the functionality like the random colour scheme) to people at a Founders and Coders Meetup. It was great to get some early user feedback on my game - both a confidence boost and a chance to refine my idea and really focus on what I wanted the purpose of the game to be, for example, I found that I wanted to write out the rules of the game more clearly.  
+- I continued writing pseudocode to work out what the JavaScript needed to look like. At this point I realised my random image generator (for level 1, level 2, level 3) was lacking because it would just generate random images including the images that had been generated already.
+  -  I decided I needed an array, following on from reading a fellow FAC applicant's code the day before (Sam). This took a lot of time to get right: after a lot of debugging with console.log() in RunJS I had a usable function. When i got this code right, i made sure i could easily change it for level 2 and 3, by swapping the "One" in variable names for "two", "three".
 - I next had to work out how to get x y coordinates of clicks on the image, to check if they match where Cooper Black is in the images.
   - I tried to get ChatGPT to show me this but, whilst I understood the code it was giving me, I wanted another explanation so I found [this one](https://www.kirupa.com/html5/getting_mouse_click_position.htm#). While only the top of the article is relevant to this example (I am only finding the x y position within the image) it did help explain things clearly.
   - I then built this code into my game, testing it with console.log(hello) at first, and the full x y coordinates of the image (i.e when image clicked, console.logs hello). This helped me test the functionality of the code, making logical choices and writing as little code as possible, while keeping it clear what was happening.
@@ -110,15 +111,19 @@ If I were to keep going and make this game more complicated, I would:
 
 - Make a new level (4) where trick fonts are introduced - visually similar fonts to Cooper Black as tricks to test players. There's a folder of such fonts in my images folder, under "tricks"
 
-- Introduce other fonts so it could become a learning tool for budding graphic and web designers. I also think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly advertising and its power over our lives. [Everything is architecture, everyone an architect!](https://pbs.twimg.com/media/Dlh_mOmWsAIN9mo.jpg)
+- Introduce other fonts so it could become a learning tool for budding graphic and web designers. I think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly advertising and its power over our lives. [Everything is architecture, everyone an architect!](https://pbs.twimg.com/media/Dlh_mOmWsAIN9mo.jpg)
 
 - Add sound effects for win/lose to make the game more interactive.
   
-- Sound on/off button for those who don't want backing music.
+- Sound on/off button for those who don't want backing music or sound effects. 
 
-- Setting high score with save to local storage
+- Setting a high score with save to local storage.
+Maybe some kind of ranking system at the end like "type nerd” and "type beginner" based on score.
+- Getting 90+ and a maximum score gets two different prizes such as triggering something to happen like an animation.
+- Having a place for people to share their own images of Cooper Black
 
-- Maybe some kind of ranking system at end like "type nerd", "type beginner" based on score. Or getting 90+ gets a prize, triggers something happening. 100 is highest possible score so this could trigger something too.
+- A link to the album the music came from on the end screen.
+
 
 ## Image Sources
 
