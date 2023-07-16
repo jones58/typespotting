@@ -158,4 +158,5 @@ Music sources:
 - Henrietta by The Fratellis: <https://www.youtube.com/watch?v=3g1VmtJR_vE>
 - All Day and All of the Night by the Kinks: <https://www.youtube.com/watch?v=GFw5ndIA0Z8>
 - Uh Uh by Thundercat: <https://www.youtube.com/watch?v=dk_ud0b4yY4>
-- No copyright infringement intended, this game is for educational purposes only.
+
+No copyright infringement intended, this game is for educational purposes only.
