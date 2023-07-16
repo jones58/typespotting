@@ -81,11 +81,12 @@
 - When I tested the game on another device, I noticed that the font wasn't loading properly, and instead defaulted to sans-serif. This was because the font was activated on my personal computer, rather than loading from the Github repo. I spent a long time attempting to fix this, before using developer tools in the browser to find the error, ChatGPT to decode the jargon from these error messages, and then realising the fonts folder needed to be in the styles folder (it's referenced from the CSS). I realised the html code for this font loading was redundant at this point so i deleted it.
 - I started off with clicking anywhere on the image triggering the win function just to get the basic functionality of the game right. This obviously needed fixing. I had already worked out I needed to set coordinates within the image, so my task was to get those coordinates and add them to my JavaScript.  
   - I made all the images 300px x 300px (this is the size they are displayed at so makes sense) to enable me to choose the coordinates properly and uniformly for each. I used [this method](https://www.idownloadblog.com/2013/10/19/how-to-resize-multiple-images-mac/) in Preview. Looking on the Live Server site, I noticed that I'd made the images too grainy for users who might want to zoom in so I reverted the changes and used 1200 x 1200px instead. I knew this would complicate things slightly but I only needed to divide by 4 to get to 300px by 300px.
-  - I drew a rectangle on the images in photoshop, then wrote down the x and y positions of those rectangles by:
-    - finding the coordinates of the rectangles top-left corner from the properties bar.
-    - getting the max x y value by adding the width to the x value and adding the height to the y value.
+  - I drew a rectangle on the images in photoshop, then wrote 
+  - down the x and y positions of those rectangles by:
+    - Finding the coordinates of the rectangles top-left corner from the properties bar.
+    - Getting the max X and Y values by adding the width to the X value and adding the height to the Y value.
   - I plugged these values into my JS (after dividing by 4) and it was great to see the game working as it should.
-    - One of the images didn't work so I had to debug, and realised the image was at the wrong size (900px x 900px) so I had to times the coordinates by 4 (to get to 900) and divide by 3 (to get to 300px) to get the right value.
+    - One of the images didn't work so I had to debug. I realised the image was at the wrong size (900px x 900px) so I had to times the coordinates by 4 (to get to 900) and divide by 3 (to get to 300px) to get the right value.
 - I set the restart button to only show after the first image (after a win/lose basically) using the same setAttribute method as with the wrong answer and right answer text.
 - During user testing, the idea for some background music came up.  My partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track.
   - I wrote pseudocode and made the random song selector in a similar way to the random color scheme.
@@ -107,9 +108,9 @@
 
 If I were to keep going and make this game more complicated, I would:
 
-- Level up announcement to differentiate between levels and introduce next one
+- Include a level up announcement to differentiate between levels and to introduce the next one. 
 
-- Make a new level (4) where trick fonts are introduced - visually similar fonts to Cooper Black as tricks to test players. There's a folder of such fonts in my images folder, under "tricks"
+- Make a new level (4) where trick fonts are introduced - visually similar fonts to Cooper Black as tricks to test players. There's a folder of such fonts in my images folder, under "tricks".
 
 - Introduce other fonts so it could become a learning tool for budding graphic and web designers. I think it's important for non-designers and people in the street to be able to recognise and deconstruct their surroundings, particularly advertising and its power over our lives. [Everything is architecture, everyone an architect!](https://pbs.twimg.com/media/Dlh_mOmWsAIN9mo.jpg)
 
