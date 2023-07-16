@@ -4,10 +4,10 @@
 
 - It took me a long time to start on this project. For days I wanted to perfect my first project, the website, or learn  more JavaScript.  Creative block was a big problem too - I wanted to create something original and fun, but wasn't sure where to start. I eventually decided to confront the project and set aside some time to work on it.
 - I did what many designers do when they're stuck - I made a mind map (which can be found in the planning folder [here](www.github.com))
-  -  Looking at different typography games online, I found that existing games tended to be split into three categories:
-    - Multiple choice "What font is this?" game
-    - Shoot the font/serif font game
-    - Kern/adjust font yourself game
+  - Looking at different typography games online, I found that existing games tended to be split into three categories:
+  - Multiple choice "What font is this?" game
+  - Shoot the font/serif font game
+  - Kern/adjust font yourself game
   - I made a basic sketch for a “What font is this?” game where the user types in the name of the font.
     - This could have been good, as the user would have to type in rather than just clicking a choice.
     - Whilst i didn't come across any game identical to this in my research, I wasn't convinced it would be sufficiently interesting so I abandoned the idea.
@@ -58,7 +58,7 @@
   - I cropped and made them square in Photoshop and named them 1-6, 1-6, 1-8 in each of the folders. Gave them same extension too for easy manipulation with JavaScript.
 - At this point I showed my game (and some of the functionality like the random colour scheme) to people at a Founders and Coders Meetup. It was great to get some early user feedback on my game - both a confidence boost and a chance to refine my idea and really focus on what I wanted the purpose of the game to be, for example, I found that I wanted to write out the rules of the game more clearly.  
 - I continued writing pseudocode to work out what the JavaScript needed to look like. At this point I realised my random image generator (for level 1, level 2, level 3) was lacking because it would just generate random images including the images that had been generated already.
-  -  I decided I needed an array, following on from reading a fellow FAC applicant's code the day before (Sam). This took a lot of time to get right: after a lot of debugging with console.log() in RunJS, I had a usable function. When i got this code right, I made sure I could easily change it for level 2 and 3 by swapping the "One" in variable names for "Two" and "Three".
+  - I decided I needed an array, following on from reading a fellow FAC applicant's code the day before (Sam). This took a lot of time to get right: after a lot of debugging with console.log() in RunJS, I had a usable function. When i got this code right, I made sure I could easily change it for level 2 and 3 by swapping the "One" in variable names for "Two" and "Three".
 - Next, I had to work out how to get XY coordinates of clicks on the image to check if they match where Cooper Black is in the images.
   - I tried to get ChatGPT to show me this but, whilst I understood the code it was giving me, I wanted another explanation so I found [this one](https://www.kirupa.com/html5/getting_mouse_click_position.htm#). While only the top of the article is relevant to this example (I am only finding the x y position within the image), it did help explain things clearly.
   - I then built this code into my game, testing it with console.log(hello) at first, and the full XY coordinates of the image (i.e when image clicked, console.logs hello). This helped me test the functionality of the code, making logical choices and writing as little code as possible, while keeping it clear what was happening.
@@ -81,7 +81,7 @@
 - When I tested the game on another device, I noticed that the font wasn't loading properly, and instead defaulted to sans-serif. This was because the font was activated on my personal computer, rather than loading from the Github repo. I spent a long time attempting to fix this, before using developer tools in the browser to find the error, ChatGPT to decode the jargon from these error messages, and then realising the fonts folder needed to be in the styles folder (it's referenced from the CSS). I realised the html code for this font loading was redundant at this point so i deleted it.
 - I started off with clicking anywhere on the image triggering the win function just to get the basic functionality of the game right. This obviously needed fixing. I had already worked out I needed to set coordinates within the image, so my task was to get those coordinates and add them to my JavaScript.  
   - I made all the images 300px x 300px (this is the size they are displayed at so makes sense) to enable me to choose the coordinates properly and uniformly for each. I used [this method](https://www.idownloadblog.com/2013/10/19/how-to-resize-multiple-images-mac/) in Preview. Looking on the Live Server site, I noticed that I'd made the images too grainy for users who might want to zoom in so I reverted the changes and used 1200 x 1200px instead. I knew this would complicate things slightly but I only needed to divide by 4 to get to 300px by 300px.
-  - I drew a rectangle on the images in photoshop, then wrote 
+  - I drew a rectangle on the images in photoshop, then wrote
   - down the x and y positions of those rectangles by:
     - Finding the coordinates of the rectangles top-left corner from the properties bar.
     - Getting the max X and Y values by adding the width to the X value and adding the height to the Y value.
@@ -96,7 +96,7 @@
   - I wrote pseudocode and set about changing the existing code to make this work.
   - I added a "Let's Play" button and styled it with CSS and currentColor.
   - I also changed when the score countdown (-1 point for 10 seconds) starts - when the user clicks the "Let's Play" button.
-- There was a bug with the game which meant that the placeholder (Goblin album cover) for the first image of level one flashed - i initially tried to fix this by adding an on load function for displaying the image only on load of the randomly generated one, but this slowed down the game. I realised the solution was far simpler - the placeholder image could be a blank png. 
+- There was a bug with the game which meant that the placeholder (Goblin album cover) for the first image of level one flashed - i initially tried to fix this by adding an on load function for displaying the image only on load of the randomly generated one, but this slowed down the game. I realised the solution was far simpler - the placeholder image could be a blank png.
 - Some users complained about the score still decreasing on the game's end point so I made an end screen to function as a bookend like the start screen.
   - Score doesn't change - by breaking out of interval.
   - I decided I wanted a photo of Cooper Black's designer, Oswald Bruce Cooper, with a speech bubble saying well done on the end screen.
@@ -108,7 +108,7 @@
 
 If I were to keep going and make this game more complicated, I would:
 
-- Include a level up announcement to differentiate between levels and to introduce the next one. 
+- Include a level up announcement to differentiate between levels and to introduce the next one.
 
 - Make a new level (4) where trick fonts are introduced - visually similar fonts to Cooper Black as tricks to test players. There's a folder of such fonts in my images folder, under "tricks".
 
@@ -116,7 +116,7 @@ If I were to keep going and make this game more complicated, I would:
 
 - Add sound effects for win/lose to make the game more interactive.
   
-- Sound on/off button for those who don't want backing music or sound effects. 
+- Sound on/off button for those who don't want backing music or sound effects.
 
 - Setting a high score with save to local storage.
 Maybe some kind of ranking system at the end like "type nerd” and "type beginner" based on score.
@@ -124,7 +124,6 @@ Maybe some kind of ranking system at the end like "type nerd” and "type beginn
 - Having a place for people to share their own images of Cooper Black
 
 - A link to the album the music came from on the end screen.
-
 
 ## Image Sources
 
