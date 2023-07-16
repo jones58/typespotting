@@ -21,7 +21,7 @@
   - Side note: I really enjoyed looking for the Cooper Black album covers because albums are where my love of design originally came from.  
   - I crowd-sourced images from friends and family of Cooper Black in the streets and took some of my own too. I also went on Google Street View to find some images but everything was a bit too blurry, and I wanted to avoid my game looking like a Captcha.
 - I came across [this video](https://www.youtube.com/watch?v=zf988tNfMx4) while looking for images and really liked the bold colours they use - I thought it would be cool to use them as the background and font colour on my site.
-  - I used an app called Sip to save the colour codes, ignoring color pairs that didn't contrast too much (because that would give unreadable type) and limiting myself to 10 combinations:
+  - I used an app called Sip to save the colour codes, ignoring colour pairs that didn't contrast too much (because that would give unreadable type) and limiting myself to 10 combinations:
     - #251B71 and #4296D2
     - #8DC788 and #2D6320
     - #EA3B24 and #F8D5D0
@@ -32,7 +32,7 @@
     - #51B333 and #FFFFFF
     - #844E20 and #D595B5
     - #75C16C and #D57CA8
-  - I also realised that using these colour pairs, on a rotating and random basis, when the page loaded and when images changed would help keep up the visual interest of my game with a selection of 20 images and 10 color schemes.
+  - I also realised that using these colour pairs, on a rotating and random basis, when the page loaded and when images changed would help keep up the visual interest of my game with a selection of 20 images and 10 colour schemes.
   - I sketched out a basic design for the site, including a very basic logo using tight custom kerning on "typespotting" and a magnifying glass made out of a "t" and "o" from Cooper Black.
     - I copied the SVG directly from Photoshop (click the layer/group and click "copy SVG"), saved it into a new SVG file and then edited it a little in Illustrator, using image tracing.
       - It was good to be able to make basic edits to the SVG in VSCodium and more complex ones in Illustrator and this is definitely something I want to look at more.
@@ -46,11 +46,11 @@
 
 ## Building and Debugging
 
-- I decided i wanted the color scheme to randomise on launch between ten options, so i set about building it. I broke this down, starting with the CSS then thinking about the JavaScript with pseudocode.  
+- I decided i wanted the colour scheme to randomise on launch between ten options, so i set about building it. I broke this down, starting with the CSS then thinking about the JavaScript with pseudocode.  
   - It took me about forty minutes to get this all working, I had to debug as I went along, writing what I thought was the right JavaScript, then debugging by wrapping it in a comment and changing the CSS until that worked with the standard "colorScheme1" as the class for HTML, then going back and fixing the JS, using Console.log(), the RunJS app and ChatGPT as I went along.
   - I named and separated this code into its function named randomColorScheme() so that I could reuse it when I wanted to, like for the images changing.
   - I got pretty excited when I got this working, so much so that I kept reloading the page.
-  - In my testing, I decided to take it down to 9 color schemes because one of the combinations (number 10) wasn't quite readable enough.
+  - In my testing, I decided to take it down to 9 colour schemes because one of the combinations (number 10) wasn't quite readable enough.
 - Next, I set up building my HTML and CSS, using my planning wireframe as a guide.
   - It was good to realise that I could minimise the svg code in VSCodium.
   - Adding the image, I wondered what size would make sense as a base px width, so i looked up the smallest mobile width in common active use and it came to be 320px (for iPhone 5), so I set the image width to 300px and set left and right margin with calc() to centre the image.
@@ -75,7 +75,7 @@
   - I changed the right and wrong answer text display to inline with set attribute. This took awhile to get the right syntax, and displaying right and wrong at different times, but I figured it out with some help from ChatGPT.
 - I next realised the images were changing to an undefined image at the end of the level (rather than going straight to the next level) so I fixed this by:
   - Adding a check for the randomOneImage, randomTwoImage, randomThreeImage before setting the image SRC attribute (```if (randomOneImage > 0)``` rather than later on in the code, where it was in the ```checkClickPosition``` function, where the image had already been set.
-- Next i wanted to change the colour scheme for each image, so i called randomColorScheme() function within the win() function. This proved a good start, but after a few wins the color scheme wouldn't change (probably too many classes set on top of each other) so I realised the best way of doing this would be to remove the existing color scheme before setting a new one. I did this within the randomColorScheme() function, using a for loop to choose the color scheme class and remove it.
+- Next i wanted to change the colour scheme for each image, so i called randomColorScheme() function within the win() function. This proved a good start, but after a few wins the colour scheme wouldn't change (probably too many classes set on top of each other) so I realised the best way of doing this would be to remove the existing colour scheme before setting a new one. I did this within the randomColorScheme() function, using a for loop to choose the colour scheme class and remove it.
 - End of the game: This was relatively easy - I wanted the final image to disappear so I got it to display:none. Then, I wanted any text saying right answer to disappear so I did the same to that, leaving just the score and restart option.
 - Chatting to Mohamed at an FAC meetup, I realised a lot of my images were bigger than the 2mb that's generally advised for websites to enable them to load quickly. I fixed this with an Image Optimiser app.
 - When I tested the game on another device, I noticed that the font wasn't loading properly, and instead defaulted to sans-serif. This was because the font was activated on my personal computer, rather than loading from the Github repo. I spent a long time attempting to fix this, before using developer tools in the browser to find the error, ChatGPT to decode the jargon from these error messages, and then realising the fonts folder needed to be in the styles folder (it's referenced from the CSS). I realised the html code for this font loading was redundant at this point so i deleted it.
@@ -86,22 +86,22 @@
     - Finding the coordinates of the rectangles top-left corner from the properties bar.
     - Getting the max X and Y values by adding the width to the X value and adding the height to the Y value.
   - I plugged these values into my JS (after dividing by 4) and it was great to see the game working as it should.
-    - One of the images didn't work so I had to debug. I realised the image was at the wrong size (900px x 900px) so I had to times the coordinates by 4 (to get to 900) and divide by 3 (to get to 300px) to get the right value.
+    - One of the images didn't work so I had to debug. I realised the image was at the wrong size (900px x 900px) so I had to times the coordinates by 4 (to get back to coordinates for a 900px x 900px image) and divide by 3 (to get to 300px) to get the right value.
 - I set the restart button to only show after the first image (after a win/lose basically) using the same setAttribute method as with the wrong answer and right answer text.
-- During user testing, the idea for some background music came up.  My partner suggested music from the albums that use Cooper Black. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game, but serve as a backing track.
-  - I wrote pseudocode and made the random song selector in a similar way to the random color scheme.
+- During user testing, the idea for some background music came up.  My partner suggested music from the albums that use Cooper Black on the album cover. I wanted fast tempo ones so I went through them and found ten tracks that I thought would work. I chose the instrumentals so it wouldn't interfere with the user's experience of the game and instead, serve as a backing track.
+  - I wrote pseudocode and made the random song selector in a similar way to the random colour scheme.
   - I got ChatGPT to teach me the basics of playing music and setting audio volume.
-  - I realised two of the songs were pretty offputting (On the Corner by Miles Davis and Black Unity by Pharoah Sanders), so i removed them. I also noticed some of the songs did not start "on beat", rather with a bit of a pause so i trimmed them to launch the game with a sound.
-- During user testing, watching users play my game i realised it would be much more intuitive to have a start scren with the rules and any info on it rather than images and a lot of information.
+  - I realised two of the songs were pretty offputting (On the Corner by Miles Davis and Black Unity by Pharoah Sanders), so I removed them. I also noticed some of the songs did not start immediately, so I trimmed them so the sound would start when you launch the game.
+- During user testing, watching users play my game,  I realised it would be much more intuitive to have a start scren with the rules and any info on it rather than images and a lot of information.
   - I wrote pseudocode and set about changing the existing code to make this work.
-  - I added a let's play button and styled it with CSS and currentColor.
-  - This also allowed me to change when the score countdown (-1 point for 10 seconds) starts - when the user clicks the let's play button.
+  - I added a "Let's Play" button and styled it with CSS and currentColor.
+  - I also changed when the score countdown (-1 point for 10 seconds) starts - when the user clicks the "Let's Play" button.
 - There was a bug with the game which meant that the placeholder (Goblin album cover) for the first image of level one flashed - i initially tried to fix this by adding an on load function for displaying the image only on load of the randomly generated one, but this slowed down the game. I realised the solution was far simpler - the placeholder image could be a blank png. 
-- Some users complained about the score still decreasing on the game's end point so I made an end screen, to function as a bookend like the start screen.
+- Some users complained about the score still decreasing on the game's end point so I made an end screen to function as a bookend like the start screen.
   - Score doesn't change - by breaking out of interval.
-  - I decided i wanted a photo of Cooper Black's designer, Oswald Bruce Cooper, with a speech bubble saying well done on the end screen.
+  - I decided I wanted a photo of Cooper Black's designer, Oswald Bruce Cooper, with a speech bubble saying well done on the end screen.
   - I made it stop the music to make it clear the game is over, setting the songAtLocation variable outside of the song function so it could be accessed within the endGame function.
-  - I changed the start button only showing at end, as another element that pops up to signify the end. I also changed this to be a button (like the let's play one) rather than just a link, to make it even more clear that it's the end of the game.
+  - I changed the restart button to only show at the end, as another element that pops up to signify the end of the game. I also changed this to be a button (like the "Let's Play" button) rather than just a link to make it even more clear that it's the end of the game.
 - I ran through the game a few times and tested it on various devices.
 
 ##  Improvements
