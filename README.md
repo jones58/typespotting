@@ -1,8 +1,6 @@
 # game
 
 ## Planning
-
-- It took me a long time to start on this project. For days I wanted to perfect my first project, the website, or learn  more JavaScript.  Creative block was a big problem too - I wanted to create something original and fun, but wasn't sure where to start. I eventually decided to confront the project and set aside some time to work on it.
 - I did what many designers do when they're stuck - I made a mind map (which can be found in the planning folder [here](www.github.com))
   - Looking at different typography games online, I found that existing games tended to be split into three categories:
   - Multiple choice "What font is this?" game
